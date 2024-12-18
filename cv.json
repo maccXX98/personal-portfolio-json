@@ -1,0 +1,131 @@
+{
+  "basics": {
+    "name": "Mauro Alejandro Castillo Calatayud",
+    "label": "Ingeniero de Sistemas",
+    "image": "https://avatars.githubusercontent.com/u/85913247?v=4",
+    "email": "mauro.castillo.ing.sis@gmail.com",
+    "phone": "75846596",
+    "url": "https://github.com/maccXX98",
+    "summary": "Egresado en Ingeniería de Sistemas con experiencia en desarrollo de aplicaciones web y móviles, gestión de bases de datos, y configuración de redes. Trabajo en equipo, autodidacta y dedicado.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "La Paz",
+      "countryCode": "BO",
+      "region": "Bolivia"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "maccXX98",
+        "url": "https://github.com/maccXX98"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Fundación Educar Para La Vida",
+      "position": "Desarrollador de Aplicaciones Educativas",
+      "url": "",
+      "startDate": "2022-02-01",
+      "endDate": "2022-07-01",
+      "summary": "Creación de una aplicación educativa de escritorio para el aprendizaje de los Objetivos de Desarrollo Sostenible. Gestión del canal oficial en YouTube.",
+      "highlights": []
+    },
+    {
+      "name": "Machine Learning",
+      "position": "Desarrollador de Software",
+      "url": "",
+      "startDate": "2023-08-01",
+      "endDate": "2023-10-01",
+      "summary": "Desarrollo de funcionalidades para el sistema de control de remesas y personal del banco PRODEM.",
+      "highlights": []
+    },
+    {
+      "name": "Novex",
+      "position": "Desarrollador de Chatbot",
+      "url": "",
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-01",
+      "summary": "Desarrollo de un chatbot de WhatsApp para respuestas automáticas mediante reconocimiento de enlaces publicitarios.",
+      "highlights": []
+    },
+    {
+      "name": "Banco Central de Bolivia",
+      "position": "Desarrollador Web",
+      "url": "",
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-01",
+      "summary": "Desarrollo de una página web para la visualización de documentos del repositorio de Auditoría Interna.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Privada Franz Tamayo",
+      "url": "",
+      "area": "Ingeniería de Sistemas",
+      "studyType": "Licenciatura",
+      "startDate": "",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Instituto Tecnológico Don Bosco",
+      "url": "",
+      "area": "Computación Avanzada",
+      "studyType": "Técnico",
+      "startDate": "2016-02-01",
+      "endDate": "2018-11-01",
+      "score": "",
+      "courses": ["Mantenimiento de Computadoras", "Inglés Técnico", "Oratoria"]
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Master en Webs Full Stack",
+      "date": "2024-07-01",
+      "issuer": "Udemy",
+      "url": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Desarrollo Web y Móvil",
+      "level": "Avanzado",
+      "keywords": ["Angular", "Node.js", "Laravel", "Symfony"]
+    },
+    {
+      "name": "Gestión de Bases de Datos",
+      "level": "Intermedio",
+      "keywords": ["SQL", "PostgreSQL"]
+    },
+    {
+      "name": "Redes y Comunicaciones",
+      "level": "Intermedio",
+      "keywords": ["Configuración de redes", "Mantenimiento"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Técnico Medio"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Actividades Personales",
+      "keywords": ["Bailar", "Investigar nuevos temas", "Ejercicio físico"]
+    }
+  ],
+  "references": [],
+  "projects": []
+}
