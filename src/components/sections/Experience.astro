@@ -3,38 +3,40 @@ import Section from "@/components/section.astro";
 import { work } from "@cv";
 ---
 
-<Section title="Experience">
+<Section title="Experiencia Profesional">
   <ul>
     {
-      work.map(({ name, startDate, endDate, position, summary, highlights }) => {
-        const startYear = new Date(startDate).getFullYear();
-        const endYear = endDate ? new Date(endDate).getFullYear() : "Actual";
-        const years = `${startYear} - ${endYear}`;
+      work.map(
+        ({ name, startDate, endDate, position, summary, highlights }) => {
+          const startYear = new Date(startDate).getFullYear();
+          const endYear = endDate ? new Date(endDate).getFullYear() : "Actual";
+          const years = `${startYear} - ${endYear}`;
 
-        return (
-          <li>
-            <article>
-              <header>
-                <div>
-                  <h3>{name || "Sin nombre"}</h3>
-                  <h4>{position || "Sin posición"}</h4>
-                </div>
-                <time>{years}</time>
-              </header>
-              <footer>
-                <p>{summary || "Sin resumen disponible."}</p>
-                {highlights && highlights.length > 0 && (
-                  <ul>
-                    {highlights.map((highlight) => (
-                      <li>{highlight}</li>
-                    ))}
-                  </ul>
-                )}
-              </footer>
-            </article>
-          </li>
-        );
-      })
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>{name || "Sin nombre"}</h3>
+                    <h4>{position || "Sin posición"}</h4>
+                  </div>
+                  <time>{years}</time>
+                </header>
+                <footer>
+                  <p>{summary || "Sin resumen disponible."}</p>
+                  {highlights && highlights.length > 0 && (
+                    <ul>
+                      {highlights.map((highlight) => (
+                        <li>{highlight}</li>
+                      ))}
+                    </ul>
+                  )}
+                </footer>
+              </article>
+            </li>
+          );
+        }
+      )
     }
   </ul>
 </Section>

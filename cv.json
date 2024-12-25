@@ -127,5 +127,54 @@
     }
   ],
   "references": [],
-  "projects": []
+  "projects": [
+    {
+      "name": "Juego Educativo sobre los Objetivos de Desarrollo Sostenible ODS",
+      "isActive": true,
+      "startDate": "2022-02-01",
+      "endDate": "2022-07-01",
+      "description": "Desarrollo de una aplicación de escritorio para facilitar el aprendizaje de los Objetivos de Desarrollo Sostenible, incluyendo la gestión del canal oficial en YouTube de la Fundación Educar Para La Vida.",
+      "highlights": [
+        "Implementación de una interfaz amigable y educativa.",
+        "Creación de contenido multimedia para complementar el aprendizaje."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Sistema de Control de Remesas y Personal",
+      "isActive": true,
+      "startDate": "2023-08-01",
+      "endDate": "2023-10-01",
+      "description": "Desarrollo de funcionalidades clave para el sistema de control de remesas y gestión de personal del banco PRODEM.",
+      "highlights": [
+        "Automatización de procesos internos.",
+        "Optimización del flujo de trabajo del sistema."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Chatbot para WhatsApp con Reconocimiento de Enlaces Publicitarios",
+      "isActive": true,
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-01",
+      "description": "Desarrollo de un chatbot de WhatsApp para automatizar respuestas y realizar análisis de enlaces publicitarios compartidos por los usuarios.",
+      "highlights": [
+        "Integración con la API de WhatsApp.",
+        "Reconocimiento y análisis de patrones en enlaces publicitarios."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Página Web para Repositorio de Auditoría Interna",
+      "isActive": true,
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-01",
+      "description": "Desarrollo de una página web para la visualización y gestión de documentos del repositorio de Auditoría Interna del Banco Central de Bolivia.",
+      "highlights": [
+        "Diseño e implementación de un sistema de búsqueda avanzada.",
+        "Optimización del acceso a documentos confidenciales."
+      ],
+      "url": ""
+    }
+  ]
 }
