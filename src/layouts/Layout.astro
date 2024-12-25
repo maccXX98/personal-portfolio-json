@@ -17,6 +17,12 @@ const title = "Portfolio Personal";
 </html>
 
 <style is:global>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
   html {
     font-family:
       Menlo,
@@ -26,25 +32,25 @@ const title = "Portfolio Personal";
       monospace;
     background-color: beige;
     letter-spacing: -0.025rem;
+    color: #333;
   }
-  body,
-  figure {
+
+  body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
   }
+
   a {
     text-decoration: none;
+    color: inherit;
   }
+
   ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
   }
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+
   h1,
   h2,
   h3,
@@ -58,11 +64,10 @@ const title = "Portfolio Personal";
       Roboto,
       sans-serif;
   }
+
   p {
     color: #666;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0;
-    text-wrap: pretty;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 </style>
