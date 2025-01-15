@@ -88,6 +88,6 @@ Este proyecto está bajo la Licencia MIT.
 
 ## Contacto
 
-Tu Nombre - [mauro.castillo.ing.sis@gmail.com](mailto:mauro.castillo.ing.sis@gmail.com)
+Tu Nombre - [mauro.castillo.ing.sis@gmail.com]
 
-Enlace del Proyecto: [https://github.com/maurocastillo98/personal-portfolio-json](https://github.com/maurocastillo98/personal-portfolio-json)
+Enlace del Proyecto: [https://github.com/maurocastillo98/personal-portfolio-json]

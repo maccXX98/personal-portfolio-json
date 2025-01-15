@@ -64,23 +64,39 @@
   "education": [
     {
       "institution": "Universidad Privada Franz Tamayo",
-      "url": "",
+      "url": "https://unifranz.edu.bo/",
       "area": "Ingeniería de Sistemas",
       "studyType": "Licenciatura",
-      "startDate": "",
-      "endDate": "",
-      "score": "",
-      "courses": []
+      "startDate": "2018-02-01",
+      "endDate": "2022-12-15",
+      "score": "75.75",
+      "courses": [
+        "Ingeniería de Sistemas",
+        "Desarrollo de Software",
+        "Redes y Comunicaciones"
+      ]
     },
     {
       "institution": "Instituto Tecnológico Don Bosco",
-      "url": "",
-      "area": "Computación Avanzada",
+      "url": "https://itdonbosco.net/",
+      "area": "Computación Avanzada, Inglés Técnico y Oratoria",
       "studyType": "Técnico",
       "startDate": "2016-02-01",
       "endDate": "2018-11-01",
       "score": "",
       "courses": ["Mantenimiento de Computadoras", "Inglés Técnico", "Oratoria"]
+    },
+    {
+      "institution": "Udemy",
+      "url": "https://www.udemy.com/",
+      "area": "Desarrollo Web con Laravel, Angular, Node y Symfony",
+      "studyType": "Técnico",
+      "startDate": "2024-04-01",
+      "endDate": "2024-07-01",
+      "score": "",
+      "courses": [
+        "Master en webs Full Stack: Angular, Node, Laravel, Symfony +"
+      ]
     }
   ],
   "awards": [],
@@ -123,7 +139,7 @@
   "interests": [
     {
       "name": "Actividades Personales",
-      "keywords": ["Bailar", "Investigar nuevos temas", "Ejercicio físico"]
+      "keywords": ["Bailar", "Ejercicio", "Podcast", "Peliculas", "Música"]
     }
   ],
   "references": [],
