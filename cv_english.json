@@ -1,0 +1,187 @@
+{
+  "basics": {
+    "name": "Mauro Alejandro Castillo Calatayud",
+    "label": "Systems Engineer",
+    "image": "https://avatars.githubusercontent.com/u/85913247?v=4",
+    "email": "mauro.castillo.ing.sis@gmail.com",
+    "phone": "75846596",
+    "url": "https://github.com/maccXX98",
+    "summary": "Systems Engineering graduate with experience in web and mobile application development, database management, and network configuration. Teamwork-oriented, self-taught, and dedicated.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "La Paz",
+      "countryCode": "BO",
+      "region": "Bolivia"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "maccXX98",
+        "url": "https://github.com/maccXX98"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Educar Para La Vida Foundation",
+      "position": "Educational Application Developer",
+      "url": "",
+      "startDate": "2022-02-01",
+      "endDate": "2022-07-01",
+      "summary": "Creation of a desktop educational application for learning about the Sustainable Development Goals. Management of the official YouTube channel.",
+      "highlights": []
+    },
+    {
+      "name": "Machine Learning",
+      "position": "Software Developer",
+      "url": "",
+      "startDate": "2023-08-01",
+      "endDate": "2023-10-01",
+      "summary": "Development of functionalities for the remittance and personnel control system of PRODEM bank.",
+      "highlights": []
+    },
+    {
+      "name": "Novex",
+      "position": "Chatbot Developer",
+      "url": "",
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-01",
+      "summary": "Development of a WhatsApp chatbot for automatic responses through advertising link recognition.",
+      "highlights": []
+    },
+    {
+      "name": "Central Bank of Bolivia",
+      "position": "Web Developer",
+      "url": "",
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-01",
+      "summary": "Development of a website for visualizing documents from the Internal Audit repository.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Universidad Privada Franz Tamayo",
+      "url": "https://unifranz.edu.bo/",
+      "area": "Systems Engineering",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2018-02-01",
+      "endDate": "2022-12-15",
+      "score": "75.75",
+      "courses": ["Systems Engineering", "Software Development", "Networks and Communications"]
+    },
+    {
+      "institution": "Instituto Tecnológico Don Bosco",
+      "url": "https://itdonbosco.net/",
+      "area": "Advanced Computing, Technical English and Public Speaking",
+      "studyType": "Technical Degree",
+      "startDate": "2016-02-01",
+      "endDate": "2018-11-01",
+      "score": "",
+      "courses": ["Computer Maintenance", "Technical English", "Public Speaking"]
+    },
+    {
+      "institution": "Udemy",
+      "url": "https://www.udemy.com/",
+      "area": "Web Development with Laravel, Angular, Node and Symfony",
+      "studyType": "Technical Degree",
+      "startDate": "2024-04-01",
+      "endDate": "2024-07-01",
+      "score": "",
+      "courses": ["Full Stack Web Master: Angular, Node, Laravel, Symfony +"]
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Full Stack Web Master",
+      "date": "2024-07-01",
+      "issuer": "Udemy",
+      "url": ""
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web and Mobile Development",
+      "level": "Advanced",
+      "keywords": ["Angular", "Node.js", "Laravel", "Symfony"]
+    },
+    {
+      "name": "Database Management",
+      "level": "Intermediate",
+      "keywords": ["SQL", "PostgreSQL"]
+    },
+    {
+      "name": "Networks and Communications",
+      "level": "Intermediate",
+      "keywords": ["Network configuration", "Maintenance"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Medium Technical"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Personal Activities",
+      "keywords": ["Dancing", "Exercise", "Podcast", "Movies", "Music"]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "Educational Game on the Sustainable Development Goals (SDGs)",
+      "isActive": true,
+      "startDate": "2022-02-01",
+      "endDate": "2022-07-01",
+      "description": "Development of a desktop application to facilitate learning about the Sustainable Development Goals, including the management of the official YouTube channel of the Educar Para La Vida Foundation.",
+      "highlights": [
+        "Implementation of a user-friendly and educational interface.",
+        "Creation of multimedia content to complement learning."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Remittance and Personnel Control System",
+      "isActive": true,
+      "startDate": "2023-08-01",
+      "endDate": "2023-10-01",
+      "description": "Development of key functionalities for the remittance control and personnel management system of PRODEM bank.",
+      "highlights": ["Automation of internal processes.", "Optimization of the system's workflow."],
+      "url": ""
+    },
+    {
+      "name": "WhatsApp Chatbot with Advertising Link Recognition",
+      "isActive": true,
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-01",
+      "description": "Development of a WhatsApp chatbot to automate responses and perform analysis of advertising links shared by users.",
+      "highlights": [
+        "Integration with the WhatsApp API.",
+        "Recognition and analysis of patterns in advertising links."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Website for Internal Audit Repository",
+      "isActive": true,
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-01",
+      "description": "Development of a website for the visualization and management of documents from the Internal Audit repository of the Central Bank of Bolivia.",
+      "highlights": [
+        "Design and implementation of an advanced search system.",
+        "Optimization of access to confidential documents."
+      ],
+      "url": ""
+    }
+  ]
+}

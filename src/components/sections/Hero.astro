@@ -1,32 +1,27 @@
 ---
-import { basics } from "@cv";
-import Section from "@/components/Section.astro";
-import Mail from "@/icons/Mail.astro";
-import Phone from "@/icons/Phone.astro";
-import LinkedIn from "@/icons/LinkedIn.astro";
-import GitHub from "@/icons/GitHub.astro";
-import WorldMap from "@/icons/WorldMap.astro";
+import { basics } from "@cv"
+import Section from "@/components/Section.astro"
+import Mail from "@/icons/Mail.astro"
+import Phone from "@/icons/Phone.astro"
+import X from "@/icons/X.astro"
+import LinkedIn from "@/icons/LinkedIn.astro"
+import GitHub from "@/icons/GitHub.astro"
+import WorldMap from "@/icons/WorldMap.astro"
+import type { SocialIcon } from "@/types"
 
-const {
-  name = "Usuario",
-  label = "",
-  image = "",
-  location = {},
-  profiles = [],
-  phone = "",
-  email = "",
-} = basics || {};
-const { city = "Ciudad", region = "Región" } = basics.location || {};
+const { name, label, image, location, profiles, phone, email } = basics
+const { city, region } = location
 
-const SOCIAL_ICONS: Record<string, any> = {
-  LinkedIn,
+const SOCIAL_ICONS: SocialIcon = {
   GitHub,
-};
+  LinkedIn,
+  X,
+}
 
-const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
-const linkedUrl = linkedInfo?.url;
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
+const linkedUrl = linkedInfo?.url
 
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 ---
 
 <Section>
@@ -35,7 +30,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
       <h1>{name}</h1>
       <h2>{label}</h2>
       <span>
-        <WorldMap aria-hidden="true" />
+        <WorldMap />
         {city}, {region}
       </span>
       <footer class="print">
@@ -49,9 +44,8 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
               title={`Enviar un correo electrónico a ${name} al correo ${email}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Enviar correo a ${email}`}
             >
-              <Mail aria-hidden="true" />
+              <Mail />
             </a>
           )
         }
@@ -59,43 +53,34 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
           phone && (
             <a
               href={`tel:${phone}`}
-              title={`Conversar con ${name} al número ${phone}`}
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Llamar a ${phone}`}
             >
-              <Phone aria-hidden="true" />
+              <Phone />
             </a>
           )
         }
         {
-          profiles.length > 0 &&
-            profiles.map(({ network, url, username }) => {
-              const Icon = SOCIAL_ICONS[network];
-              if (!Icon) return null;
-              return (
-                <a
-                  href={url}
-                  title={`Visitar el perfil de ${name} en ${network}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Perfil de ${name} en ${network}`}
-                >
-                  <Icon aria-hidden="true" />
-                </a>
-              );
-            })
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network]
+
+            return (
+              <a
+                href={url}
+                title={`Visitar el perfil de ${name} en ${network}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            )
+          })
         }
       </footer>
     </div>
     <figure>
-      <img
-        src={image}
-        alt={`Foto de perfil de ${name}`}
-        loading="lazy"
-        width="128"
-        height="128"
-      />
+      <img src={image} alt={name} />
     </figure>
   </div>
 </Section>
