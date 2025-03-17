@@ -58,6 +58,19 @@
       "endDate": "2024-06-01",
       "summary": "Desarrollo de una página web para la visualización de documentos del repositorio de Auditoría Interna.",
       "highlights": []
+    },
+    {
+      "name": "Notaría de Mapiri",
+      "position": "Desarrollador de Software",
+      "url": "",
+      "startDate": "2024-12-02",
+      "endDate": "2025-02-28",
+      "summary": "Desarrollé e implementé un sistema contable y de registro para una notaría en Mapiri, Bolivia, abarcando módulos para contabilidad, gestión de documentos, seguimiento de clientes y administración de pagos.",
+      "highlights": [
+        "Diseñé e implementé la arquitectura del backend utilizando Tauri y SQLite.",
+        "Creé módulos específicos para la contabilidad, gestión de documentos y clientes.",
+        "Optimicé los procesos contables y automatización de reportes mensuales."
+      ]
     }
   ],
   "volunteer": [],
@@ -70,7 +83,11 @@
       "startDate": "2018-02-01",
       "endDate": "2022-12-15",
       "score": "75.75",
-      "courses": ["Ingeniería de Sistemas", "Desarrollo de Software", "Redes y Comunicaciones"]
+      "courses": [
+        "Ingeniería de Sistemas",
+        "Desarrollo de Software",
+        "Redes y Comunicaciones"
+      ]
     },
     {
       "institution": "Instituto Tecnológico Don Bosco",
@@ -80,7 +97,11 @@
       "startDate": "2016-02-01",
       "endDate": "2018-11-01",
       "score": "",
-      "courses": ["Mantenimiento de Computadoras", "Inglés Técnico", "Oratoria"]
+      "courses": [
+        "Mantenimiento de Computadoras",
+        "Inglés Técnico",
+        "Oratoria"
+      ]
     },
     {
       "institution": "Udemy",
@@ -90,7 +111,9 @@
       "startDate": "2024-04-01",
       "endDate": "2024-07-01",
       "score": "",
-      "courses": ["Master en webs Full Stack: Angular, Node, Laravel, Symfony +"]
+      "courses": [
+        "Master en webs Full Stack: Angular, Node, Laravel, Symfony +"
+      ]
     }
   ],
   "awards": [],
@@ -107,57 +130,243 @@
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
     },
     {
       "name": "CSS",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
     },
     {
       "name": "JavaScript",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
     },
     {
       "name": "TypeScript",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
     },
     {
-      "name": "Node",
+      "name": "PHP",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "Servidor",
+        "Aplicaciones Web"
+      ]
     },
     {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
+      "name": "C#",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo de Aplicaciones",
+        ".NET",
+        "Backend",
+        "Programación Orientada a Objetos"
+      ]
     },
     {
-      "name": "Git",
-      "level": "Avanzado",
-      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente", "Git"]
-    },
-    {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"]
+      "name": "Bash",
+      "level": "Intermedio",
+      "keywords": [
+        "Terminal",
+        "Scripting",
+        "Linux",
+        "Automatización"
+      ]
     },
     {
       "name": "React",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Laravel",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "PHP Framework",
+        "MVC"
+      ]
+    },
+    {
+      "name": "NestJS",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "TypeScript",
+        "Node.js Framework"
+      ]
+    },
+    {
+      "name": "Angular",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Framework",
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "AstroJS",
+      "level": "Basico",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Static Site Generator",
+        "Performance"
+      ]
+    },
+    {
+      "name": "Tauri",
+      "level": "Basico",
+      "keywords": [
+        "Desarrollo de Aplicaciones",
+        "Desktop",
+        "Rust",
+        "Web Technologies"
+      ]
+    },
+    {
+      "name": "Expo",
+      "level": "Basico",
+      "keywords": [
+        "Desarrollo Móvil",
+        "React Native",
+        "Aplicaciones Multiplataforma"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Intermedio",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "SQLite",
+      "level": "Intermedio",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento Local",
+        "Aplicaciones Móviles"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "WordPress",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "CMS",
+        "PHP",
+        "Gestión de Contenidos"
+      ]
+    },
+    {
+      "name": "Windows",
+      "level": "Avanzado",
+      "keywords": [
+        "Sistemas Operativos",
+        "Entorno de Escritorio"
+      ]
+    },
+    {
+      "name": "Ubuntu",
+      "level": "Intermedio",
+      "keywords": [
+        "Sistemas Operativos",
+        "Linux",
+        "Terminal"
+      ]
+    },
+    {
+      "name": "Office",
+      "level": "Avanzado",
+      "keywords": [
+        "Productividad",
+        "Ofimática",
+        "Microsoft"
+      ]
     }
   ],
   "languages": [
@@ -173,7 +382,13 @@
   "interests": [
     {
       "name": "Actividades Personales",
-      "keywords": ["Bailar", "Ejercicio", "Podcast", "Peliculas", "Música"]
+      "keywords": [
+        "Bailar",
+        "Ejercicio",
+        "Podcast",
+        "Peliculas",
+        "Música"
+      ]
     }
   ],
   "references": [],
@@ -197,7 +412,10 @@
       "startDate": "2023-08-01",
       "endDate": "2023-10-01",
       "description": "Desarrollo de funcionalidades clave para el sistema de control de remesas y gestión de personal del banco PRODEM.",
-      "highlights": ["Automatización de procesos internos.", "Optimización del flujo de trabajo del sistema."],
+      "highlights": [
+        "Automatización de procesos internos.",
+        "Optimización del flujo de trabajo del sistema."
+      ],
       "url": "https://github.com/Cristian-Beltran/PRODEM.git",
       "github": "https://github.com/Cristian-Beltran/PRODEM.git"
     },
@@ -225,6 +443,20 @@
         "Optimización del acceso a documentos confidenciales."
       ],
       "url": ""
+    },
+    {
+      "name": "Sistema de Registro para la Notaría de Mapiri",
+      "isActive": true,
+      "startDate": "2024-12-02",
+      "endDate": "2025-02-28",
+      "description": "Desarrollo de un sistema de registro para una notaría en Mapiri, utilizando Tauri, React, Tailwind CSS y SQLite. El sistema incluye módulos para contabilidad, gestión de documentos, seguimiento de clientes y procesamiento de pagos.",
+      "highlights": [
+        "Implementación del backend con Tauri y base de datos SQLite.",
+        "Desarrollo de un dashboard completo y pantallas modulares con React y Tailwind CSS.",
+        "Validación y optimización de procesos contables y administrativos."
+      ],
+      "url": "https://github.com/maccXX98/registros-notaria.git",
+      "github": "https://github.com/maccXX98/registros-notaria.git"
     }
   ]
 }
