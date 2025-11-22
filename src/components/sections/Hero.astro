@@ -1,25 +1,27 @@
 ---
-import { basics } from "@cv"
-import Section from "@/components/Section.astro"
-import Mail from "@/icons/Mail.astro"
-import Phone from "@/icons/Phone.astro"
-import LinkedIn from "@/icons/LinkedIn.astro"
-import GitHub from "@/icons/GitHub.astro"
-import WorldMap from "@/icons/WorldMap.astro"
-import type { SocialIcon } from "@/types"
+import { basics } from "@cv";
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email } = basics
-const { city, region } = location
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
   LinkedIn,
-}
+};
 
-const linkedInfo = profiles.find(({ network }) => network === "LinkedIn")
-const linkedUrl = linkedInfo?.url
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedUrl = linkedInfo?.url;
 
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
+
+import { Picture } from "astro:assets";
 ---
 
 <Section>
@@ -61,7 +63,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
         }
         {
           profiles.map(({ network, url, username }) => {
-            const Icon = SOCIAL_ICONS[network]
+            const Icon = SOCIAL_ICONS[network];
 
             return (
               <a
@@ -72,13 +74,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
               >
                 <Icon />
               </a>
-            )
+            );
           })
         }
       </footer>
     </div>
     <figure>
-      <img src={image} alt={name} />
+      <Picture src={image} alt={name} loading="eager" formats={["avif", "webp", "jpg"]} width="165" height="170" />
     </figure>
   </div>
 </Section>
@@ -113,7 +115,6 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
   img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    width: 128px;
     border-radius: 16px;
   }
 
