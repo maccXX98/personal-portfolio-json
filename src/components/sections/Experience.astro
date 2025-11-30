@@ -51,38 +51,71 @@ import { work } from "@cv";
     display: flex;
     flex-direction: column;
     gap: 32px;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  ul::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e5e7eb;
+  }
+
+  li {
+    position: relative;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3b82f6;
+    border: 2px solid #fff;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 
   article h3 {
-    font-weight: 500;
-    color: #111;
+    font-weight: 600;
+    color: #111827;
+    font-size: 1.1rem;
   }
 
   article a {
-    color: #111;
+    color: inherit;
   }
 
   article a:hover {
     text-decoration: underline;
+    color: #2563eb;
   }
 
   article h4 {
-    color: #222;
+    color: #4b5563;
     font-weight: 400;
+    margin-top: 0.25rem;
   }
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
 
   time {
-    color: #555;
+    color: #6b7280;
     font-size: 0.85rem;
     min-width: 102px;
-    cursor: default;
+    text-align: right;
   }
 
   [data-title]:hover:after {
@@ -93,35 +126,49 @@ import { work } from "@cv";
 
   [data-title]:after {
     content: attr(data-title);
-    background-color: #333;
+    background-color: #1f2937;
     color: #fff;
     font-size: 0.75rem;
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      "Courier New",
-      monospace;
+    font-family: var(--font-sans);
     position: absolute;
     padding: 0.2rem 0.5rem;
     bottom: -1.4rem;
     left: 50%;
     white-space: nowrap;
-    box-shadow: 1px 1px 1px #222222;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    border: 1px solid #111111;
-    z-index: 99999;
+    z-index: 10;
     visibility: hidden;
     border-radius: 6px;
+    transform: translateX(-50%);
   }
 
   [data-title] {
     position: relative;
   }
+  
+  p {
+    color: #4b5563;
+  }
 
   @media (width <= 700px) {
     time {
       text-align: right;
+    }
+    
+    ul {
+      padding-left: 0;
+    }
+    
+    ul::before, li::before {
+      display: none;
+    }
+  }
+
+  @media print {
+    ul::before, li::before {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
   }
 </style>

@@ -82,13 +82,30 @@ const SKILLS_ICONS: Record<string, any> = {
 
   li {
     align-items: center;
-    background: #eee;
+    background: #1f2937;
     border-radius: 6px;
-    color: black;
+    color: #fff;
     display: flex;
     font-size: 0.8rem;
     font-weight: 500;
     gap: 4px;
     padding: 0.2rem 0.6rem;
+    transition: all 0.2s ease;
+    cursor: default;
+  }
+  
+  li:hover {
+    background: #374151;
+    transform: translateY(-2px);
+  }
+
+  @media print {
+    li {
+      background: #fff;
+      color: #000;
+      border: 1px solid #ccc;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
   }
 </style>

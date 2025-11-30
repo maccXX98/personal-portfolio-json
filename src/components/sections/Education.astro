@@ -39,11 +39,42 @@ import { education } from "@cv";
     display: flex;
     flex-direction: column;
     gap: 32px;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  ul::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e5e7eb;
+  }
+
+  li {
+    position: relative;
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3b82f6;
+    border: 2px solid #fff;
+    transform: translateX(-50%);
+    z-index: 1;
   }
 
   article h3 {
-    font-weight: 500;
-    color: #111;
+    font-weight: 600;
+    color: #111827;
+    font-size: 1.1rem;
   }
 
   header {
@@ -54,14 +85,34 @@ import { education } from "@cv";
   }
 
   time {
-    color: #555;
+    color: #6b7280;
     font-size: 0.85rem;
     min-width: 102px;
+    text-align: right;
+  }
+  
+  p {
+    color: #4b5563;
   }
 
   @media (width <= 700px) {
     time {
       text-align: right;
+    }
+    
+    ul {
+      padding-left: 0;
+    }
+    
+    ul::before, li::before {
+      display: none;
+    }
+  }
+
+  @media print {
+    ul::before, li::before {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
   }
 </style>

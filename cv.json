@@ -92,7 +92,7 @@
     {
       "name": "Banco BISA S.A.",
       "position": "Técnico Externo de Tecnología",
-      "url": "https://www.bancobisa.com",
+      "url": "https://www.bisa.com/home",
       "startDate": "2025-04-01",
       "summary": "Responsable del mantenimiento preventivo y correctivo de equipos tecnológicos, soporte técnico a sistemas utilizados en diversas áreas del banco, instalación de hardware y software, y apoyo en la implementación de nuevos sistemas y estaciones de trabajo.",
       "highlights": [
@@ -116,7 +116,11 @@
       "startDate": "2018-02-01",
       "endDate": "2022-12-15",
       "score": "75.75",
-      "courses": ["Ingeniería de Sistemas", "Desarrollo de Software", "Redes y Comunicaciones"]
+      "courses": [
+        "Ingeniería de Sistemas",
+        "Desarrollo de Software",
+        "Redes y Comunicaciones"
+      ]
     },
     {
       "institution": "Instituto Tecnológico Don Bosco",
@@ -126,7 +130,11 @@
       "startDate": "2016-02-01",
       "endDate": "2018-11-01",
       "score": "",
-      "courses": ["Mantenimiento de Computadoras", "Inglés Técnico", "Oratoria"]
+      "courses": [
+        "Mantenimiento de Computadoras",
+        "Inglés Técnico",
+        "Oratoria"
+      ]
     },
     {
       "institution": "Udemy",
@@ -136,7 +144,9 @@
       "startDate": "2024-04-01",
       "endDate": "2024-07-01",
       "score": "",
-      "courses": ["Master en webs Full Stack: Angular, Node, Laravel, Symfony +"]
+      "courses": [
+        "Master en webs Full Stack: Angular, Node, Laravel, Symfony +"
+      ]
     },
     {
       "institution": "Udemy",
@@ -146,7 +156,9 @@
       "startDate": "2025-06-01",
       "endDate": "2025-11-01",
       "score": "",
-      "courses": ["Master en React: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+"]
+      "courses": [
+        "Master en React: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+"
+      ]
     },
     {
       "institution": "Udemy",
@@ -156,7 +168,9 @@
       "startDate": "2025-10-01",
       "endDate": "2025-11-01",
       "score": "",
-      "courses": ["Headless WordPress - Astro WP REST API Tailwind TypeScript"]
+      "courses": [
+        "Headless WordPress - Astro WP REST API Tailwind TypeScript"
+      ]
     }
   ],
   "awards": [],
@@ -173,127 +187,243 @@
     {
       "name": "HTML",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
     },
     {
       "name": "CSS",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
     },
     {
       "name": "JavaScript",
       "level": "Master",
-      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
     },
     {
       "name": "TypeScript",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
     },
     {
       "name": "PHP",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Backend", "Servidor", "Aplicaciones Web"]
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "Servidor",
+        "Aplicaciones Web"
+      ]
     },
     {
       "name": "C#",
       "level": "Intermedio",
-      "keywords": ["Desarrollo de Aplicaciones", ".NET", "Backend", "Programación Orientada a Objetos"]
+      "keywords": [
+        "Desarrollo de Aplicaciones",
+        ".NET",
+        "Backend",
+        "Programación Orientada a Objetos"
+      ]
     },
     {
       "name": "Bash",
       "level": "Intermedio",
-      "keywords": ["Terminal", "Scripting", "Linux", "Automatización"]
+      "keywords": [
+        "Terminal",
+        "Scripting",
+        "Linux",
+        "Automatización"
+      ]
     },
     {
       "name": "React",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
     },
     {
       "name": "Node",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
     },
     {
       "name": "Tailwind",
       "level": "Avanzado",
-      "keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
     },
     {
       "name": "Laravel",
       "level": "Intermedio",
-      "keywords": ["Desarrollo Web", "Backend", "PHP Framework", "MVC"]
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "PHP Framework",
+        "MVC"
+      ]
     },
     {
       "name": "NestJS",
       "level": "Intermedio",
-      "keywords": ["Desarrollo Web", "Backend", "TypeScript", "Node.js Framework"]
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "TypeScript",
+        "Node.js Framework"
+      ]
     },
     {
       "name": "Angular",
       "level": "Intermedio",
-      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Framework", "TypeScript"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Framework",
+        "TypeScript"
+      ]
     },
     {
       "name": "AstroJS",
       "level": "Basico",
-      "keywords": ["Desarrollo Web", "Frontend", "Static Site Generator", "Performance"]
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Static Site Generator",
+        "Performance"
+      ]
     },
     {
       "name": "Tauri",
       "level": "Basico",
-      "keywords": ["Desarrollo de Aplicaciones", "Desktop", "Rust", "Web Technologies"]
+      "keywords": [
+        "Desarrollo de Aplicaciones",
+        "Desktop",
+        "Rust",
+        "Web Technologies"
+      ]
     },
     {
       "name": "Expo",
       "level": "Basico",
-      "keywords": ["Desarrollo Móvil", "React Native", "Aplicaciones Multiplataforma"]
+      "keywords": [
+        "Desarrollo Móvil",
+        "React Native",
+        "Aplicaciones Multiplataforma"
+      ]
     },
     {
       "name": "MySQL",
       "level": "Avanzado",
-      "keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
     },
     {
       "name": "PostgreSQL",
       "level": "Intermedio",
-      "keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
     },
     {
       "name": "SQLite",
       "level": "Intermedio",
-      "keywords": ["Bases de Datos", "SQL", "Almacenamiento Local", "Aplicaciones Móviles"]
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento Local",
+        "Aplicaciones Móviles"
+      ]
     },
     {
       "name": "Git",
       "level": "Avanzado",
-      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
     },
     {
       "name": "GitHub",
       "level": "Avanzado",
-      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente", "Git"]
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
     },
     {
       "name": "WordPress",
       "level": "Intermedio",
-      "keywords": ["Desarrollo Web", "CMS", "PHP", "Gestión de Contenidos"]
+      "keywords": [
+        "Desarrollo Web",
+        "CMS",
+        "PHP",
+        "Gestión de Contenidos"
+      ]
     },
     {
       "name": "Windows",
       "level": "Avanzado",
-      "keywords": ["Sistemas Operativos", "Entorno de Escritorio"]
+      "keywords": [
+        "Sistemas Operativos",
+        "Entorno de Escritorio"
+      ]
     },
     {
       "name": "Ubuntu",
       "level": "Intermedio",
-      "keywords": ["Sistemas Operativos", "Linux", "Terminal"]
+      "keywords": [
+        "Sistemas Operativos",
+        "Linux",
+        "Terminal"
+      ]
     },
     {
       "name": "Office",
       "level": "Avanzado",
-      "keywords": ["Productividad", "Ofimática", "Microsoft"]
+      "keywords": [
+        "Productividad",
+        "Ofimática",
+        "Microsoft"
+      ]
     }
   ],
   "languages": [
@@ -309,7 +439,13 @@
   "interests": [
     {
       "name": "Actividades Personales",
-      "keywords": ["Bailar", "Ejercicio", "Podcast", "Peliculas", "Música"]
+      "keywords": [
+        "Bailar",
+        "Ejercicio",
+        "Podcast",
+        "Peliculas",
+        "Música"
+      ]
     }
   ],
   "references": [],
@@ -333,7 +469,10 @@
       "startDate": "2023-08-01",
       "endDate": "2023-10-01",
       "description": "Desarrollo de funcionalidades clave para el sistema de control de remesas y gestión de personal del banco PRODEM.",
-      "highlights": ["Automatización de procesos internos.", "Optimización del flujo de trabajo del sistema."],
+      "highlights": [
+        "Automatización de procesos internos.",
+        "Optimización del flujo de trabajo del sistema."
+      ],
       "url": "https://github.com/Cristian-Beltran/PRODEM.git",
       "github": "https://github.com/Cristian-Beltran/PRODEM.git"
     },
