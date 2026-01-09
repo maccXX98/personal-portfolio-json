@@ -1,0 +1,432 @@
+basics:
+  name: Mauro Alejandro Castillo Calatayud
+  label: Systems Engineer | Full Stack Developer | Critical Infrastructure Support
+  image: "https://avatars.githubusercontent.com/u/85913247?v=4"
+  email: mauro.castillo.ing.sis@gmail.com
+  phone: "75846596"
+  url: "https://github.com/maccXX98"
+  summary: >-
+    Systems Engineer with a hybrid focus on high-impact software development and
+    management of technological infrastructure. Specialized in modernizing
+    processes using contemporary technologies (MERN, Astro, NestJS) with proven
+    experience in the banking sector. Analytical ability to diagnose complex
+    failures and design scalable solutions that optimize institutional operability.
+  location:
+    address: ""
+    postalCode: ""
+    city: La Paz
+    countryCode: BO
+    region: Bolivia
+  profiles:
+    - network: GitHub
+      username: maccXX98
+      url: "https://github.com/maccXX98"
+work:
+  - name: Fundación Educar Para La Vida
+    position: Educational Application Developer
+    url: "https://educarparalavida.org.bo/web/Inicio.html"
+    startDate: "2022-02-01"
+    endDate: "2022-07-01"
+    summary: >-
+      Led full software development lifecycle for an educational application, from
+      conceptual design to final deployment. Created interactive tools to
+      facilitate dissemination of the Sustainable Development Goals (SDGs).
+    highlights:
+      - Designed an intuitive interface focused on student UX.
+      - Strategically managed multimedia content to maximize educational reach.
+  - name: Machine Learning
+    position: Software Developer
+    url: "https://www.facebook.com/MACHINELEARNINGBOLIVIA/"
+    startDate: "2023-08-01"
+    endDate: "2023-10-01"
+    summary: >-
+      Software engineering for critical financial systems. Developed and maintained
+      modules for remittance management and personnel control, ensuring data
+      integrity.
+    highlights:
+      - Implemented new features that optimized remittance processing times.
+      - Refactored legacy code to improve maintainability and scalability.
+  - name: Novex
+    position: Chatbot Developer
+    url: "https://www.novex.com.bo/"
+    startDate: "2023-10-01"
+    endDate: "2023-12-01"
+    summary: >-
+      Developed customer service automation solutions integrating basic AI for
+      natural language processing.
+    highlights:
+      - Built a chatbot capable of analyzing and filtering advertising links in
+        real time.
+      - Successfully integrated with the WhatsApp API for high-availability
+        automated responses.
+  - name: Central Bank of Bolivia
+    position: Web Developer
+    url: "https://www.bcb.gob.bo/"
+    startDate: "2024-03-01"
+    endDate: "2024-06-01"
+    summary: >-
+      Modernized internal document management by developing a secure web platform
+      for the Internal Audit area.
+    highlights:
+      - Implemented an optimized search engine for instant retrieval of historical
+        documents.
+      - Designed an adaptive interface for viewing large volumes of data.
+  - name: Notaría de Mapiri
+    position: Software Architect
+    url: "https://dirnoplu.gob.bo/"
+    startDate: "2024-12-02"
+    endDate: "2025-02-28"
+    summary: >-
+      Complete digitalization of notarial management through a secure, custom
+      desktop solution.
+    highlights:
+      - Designed and developed a cross-platform desktop application using Tauri
+        and SQLite for optimal local performance.
+      - Automated accounting cycles and monthly reports, eliminating manual errors.
+      - Created a document management and workflow tracking system with integrated
+        security validations.
+  - name: Escuela Avior Corporation
+    position: Web Developer
+    url: "https://aviorcorporation.netlify.app"
+    startDate: "2025-10-01"
+    endDate: "2025-11-15"
+    summary: >-
+      Transformed institutional digital presence by delivering a high-performance
+      website focused on conversion.
+    highlights:
+      - Architected a static site with Astro achieving ultra-fast load times and
+        excellent PageSpeed scores.
+      - Implemented SEO strategies and Mobile-First design to maximize reach and
+        lead capture.
+      - Integrated direct WhatsApp communication flows to streamline institutional
+        contact.
+  - name: Banco BISA S.A.
+    position: External IT Technician
+    url: "https://www.bisa.com/home"
+    startDate: "2025-04-01"
+    summary: >-
+      Management and optimization of bank technological infrastructure, ensuring
+      operational continuity and compliance with critical security standards.
+    highlights:
+      - Resolved critical incidents in institutional systems, maintaining high SLA
+        compliance.
+      - Executed preventive and corrective maintenance plans for specialized
+        hardware and mission-critical networks.
+      - Led deployments of new workstations and configured secure user environments.
+volunteer: []
+education:
+  - institution: Universidad Privada Franz Tamayo
+    url: "https://unifranz.edu.bo/"
+    area: Systems Engineering
+    studyType: Bachelor's Degree
+    startDate: "2018-02-01"
+    endDate: "2022-12-15"
+    score: "75.75"
+    courses:
+      - Systems Engineering
+      - Software Development
+      - Networks and Communications
+  - institution: Instituto Tecnológico Don Bosco
+    url: "https://itdonbosco.net/"
+    area: "Advanced Computing, Technical English and Public Speaking"
+    studyType: Technical Degree
+    startDate: "2016-02-01"
+    endDate: "2018-11-01"
+    score: ""
+    courses:
+      - Computer Maintenance
+      - Technical English
+      - Public Speaking
+  - institution: Udemy
+    url: "https://www.udemy.com/"
+    area: "Web Development with Laravel, Angular, Node and Symfony"
+    studyType: Technical Course
+    startDate: "2024-04-01"
+    endDate: "2024-07-01"
+    score: ""
+    courses:
+      - "Full Stack Web Master: Angular, Node, Laravel, Symfony +"
+  - institution: Udemy
+    url: "https://www.udemy.com/"
+    area: Web Development with MERN stack
+    studyType: Technical Course
+    startDate: "2025-06-01"
+    endDate: "2025-11-01"
+    score: ""
+    courses:
+      - "Master in React: Learn ReactJS, Hooks, MERN, NodeJS, JWT+"
+  - institution: Udemy
+    url: "https://www.udemy.com/"
+    area: Web Development with Astro and Tailwind CSS
+    studyType: Technical Course
+    startDate: "2025-10-01"
+    endDate: "2025-11-01"
+    score: ""
+    courses:
+      - Headless WordPress - Astro WP REST API Tailwind TypeScript
+awards: []
+certificates:
+  - name: Full Stack Web Master
+    date: "2024-07-01"
+    issuer: Udemy
+    url: ""
+publications: []
+skills:
+  - name: HTML
+    level: Master
+    keywords:
+      - Web Development
+      - Frontend
+  - name: CSS
+    level: Master
+    keywords:
+      - Web Development
+      - Frontend
+      - Responsive Design
+  - name: JavaScript
+    level: Master
+    keywords:
+      - Web Development
+      - Frontend
+      - Backend
+      - Fullstack
+  - name: TypeScript
+    level: Advanced
+    keywords:
+      - Web Development
+      - Frontend
+      - Backend
+      - JavaScript Superset
+  - name: PHP
+    level: Advanced
+    keywords:
+      - Web Development
+      - Backend
+      - Server
+      - Web Applications
+  - name: "C#"
+    level: Intermediate
+    keywords:
+      - Application Development
+      - .NET
+      - Backend
+      - Object-Oriented Programming
+  - name: Bash
+    level: Intermediate
+    keywords:
+      - Terminal
+      - Scripting
+      - Linux
+      - Automation
+  - name: React
+    level: Advanced
+    keywords:
+      - Web Development
+      - Frontend
+      - JavaScript Library
+      - UI
+  - name: Node
+    level: Advanced
+    keywords:
+      - Web Development
+      - Backend
+      - JavaScript
+      - Server
+  - name: Tailwind
+    level: Advanced
+    keywords:
+      - Web Development
+      - Frontend
+      - CSS Framework
+      - Responsive Design
+  - name: Laravel
+    level: Intermediate
+    keywords:
+      - Web Development
+      - Backend
+      - PHP Framework
+      - MVC
+  - name: NestJS
+    level: Intermediate
+    keywords:
+      - Web Development
+      - Backend
+      - TypeScript
+      - Node.js Framework
+  - name: Angular
+    level: Intermediate
+    keywords:
+      - Web Development
+      - Frontend
+      - JavaScript Framework
+      - TypeScript
+  - name: AstroJS
+    level: Basic
+    keywords:
+      - Web Development
+      - Frontend
+      - Static Site Generator
+      - Performance
+  - name: Tauri
+    level: Basic
+    keywords:
+      - Application Development
+      - Desktop
+      - Rust
+      - Web Technologies
+  - name: Expo
+    level: Basic
+    keywords:
+      - Mobile Development
+      - React Native
+      - Cross-platform Apps
+  - name: MySQL
+    level: Advanced
+    keywords:
+      - Databases
+      - SQL
+      - Data Storage
+      - Backend
+  - name: PostgreSQL
+    level: Intermediate
+    keywords:
+      - Databases
+      - SQL
+      - Data Storage
+      - Backend
+  - name: SQLite
+    level: Intermediate
+    keywords:
+      - Databases
+      - SQL
+      - Local Storage
+      - Mobile Applications
+  - name: Git
+    level: Advanced
+    keywords:
+      - Version Control
+      - Collaboration
+      - Source Code
+  - name: GitHub
+    level: Advanced
+    keywords:
+      - Version Control
+      - Collaboration
+      - Source Code
+      - Git
+  - name: WordPress
+    level: Intermediate
+    keywords:
+      - Web Development
+      - CMS
+      - PHP
+      - Content Management
+  - name: Windows
+    level: Advanced
+    keywords:
+      - Operating Systems
+      - Desktop Environment
+  - name: Ubuntu
+    level: Intermediate
+    keywords:
+      - Operating Systems
+      - Linux
+      - Terminal
+  - name: Office
+    level: Advanced
+    keywords:
+      - Productivity
+      - Office Suite
+      - Microsoft
+languages:
+  - language: Spanish
+    fluency: Native
+  - language: English
+    fluency: Medium Technical
+interests:
+  - name: Personal Activities
+    keywords:
+      - Dancing
+      - Exercise
+      - Podcast
+      - Movies
+      - Music
+references: []
+projects:
+  - name: Educational Game on the Sustainable Development Goals (SDGs)
+    isActive: true
+    startDate: "2022-02-01"
+    endDate: "2022-07-01"
+    description: >-
+      Developed a desktop application to facilitate learning about the
+      Sustainable Development Goals, including management of the Educar Para La
+      Vida Foundation's official YouTube channel.
+    highlights:
+      - Implemented a user-friendly and educational interface.
+      - Created multimedia content to complement learning.
+    url: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
+    github: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
+  - name: Remittance and Personnel Control System
+    isActive: true
+    startDate: "2023-08-01"
+    endDate: "2023-10-01"
+    description: >-
+      Developed key functionalities for the remittance control and personnel
+      management system of PRODEM bank.
+    highlights:
+      - Automated internal processes.
+      - Optimized the system workflow.
+    url: "https://github.com/Cristian-Beltran/PRODEM.git"
+    github: "https://github.com/Cristian-Beltran/PRODEM.git"
+  - name: WhatsApp Chatbot with Advertising Link Recognition
+    isActive: true
+    startDate: "2023-10-01"
+    endDate: "2023-12-01"
+    description: >-
+      Developed a WhatsApp chatbot to automate responses and analyze advertising
+      links shared by users.
+    highlights:
+      - Integrated with the WhatsApp API.
+      - Recognized and analyzed patterns in advertising links.
+    url: "https://github.com/maccXX98/botWappBaileys.git"
+    github: "https://github.com/maccXX98/botWappBaileys.git"
+  - name: Website for Internal Audit Repository
+    isActive: true
+    startDate: "2024-03-01"
+    endDate: "2024-06-01"
+    description: >-
+      Developed a website for visualization and management of documents from the
+      Internal Audit repository of the Central Bank of Bolivia.
+    highlights:
+      - Designed and implemented an advanced search system.
+      - Optimized access to confidential documents.
+    url: "https://www.bcb.gob.bo/"
+  - name: Registry System for Notaría de Mapiri
+    isActive: true
+    startDate: "2024-12-02"
+    endDate: "2025-02-28"
+    description: >-
+      Developed a registration system for a notary in Mapiri using Tauri, React,
+      Tailwind CSS and SQLite. The system includes accounting, document
+      management, client tracking and payment processing modules.
+    highlights:
+      - Implemented backend with Tauri and SQLite database.
+      - Built a full dashboard and modular screens with React and Tailwind CSS.
+      - Validated and optimized accounting and administrative processes.
+    url: "https://github.com/maccXX98/registros-notaria.git"
+    github: "https://github.com/maccXX98/registros-notaria.git"
+  - name: Website for Avior Corporation School
+    isActive: true
+    startDate: "2025-10-01"
+    endDate: "2025-11-15"
+    description: >-
+      Built a website for the aviation school Avior Corporation showcasing
+      programs, courses and facilitating contact with the company.
+    highlights:
+      - Frontend implemented with Astro.
+      - >-
+        Developed a responsive, SEO-optimized and attractive site using Astro
+        and Tailwind CSS.
+      - Enabled direct communication to WhatsApp numbers via contact form.
+    url: "https://aviorcorporation.netlify.app"
+    github: "https://github.com/maccXX98/avior-landing-page"

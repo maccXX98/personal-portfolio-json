@@ -1,0 +1,416 @@
+basics:
+  name: Mauro Alejandro Castillo Calatayud
+  label: Ingeniero de Sistemas | Full Stack Developer | Soporte de Infraestructura Crítica
+  image: "https://avatars.githubusercontent.com/u/85913247?v=4"
+  email: mauro.castillo.ing.sis@gmail.com
+  phone: "75846596"
+  url: "https://github.com/maccXX98"
+  summary: >-
+    Ingeniero de Sistemas con un enfoque híbrido en desarrollo de software de alto impacto y gestión de infraestructura tecnológica.
+    Especializado en la modernización de procesos mediante tecnologías modernas (MERN, Astro, NestJS) y con experiencia probada en el sector bancario.
+    Capacidad analítica para diagnosticar fallos complejos y diseñar soluciones escalables que optimizan la operatividad institucional.
+  location:
+    address: ""
+    postalCode: ""
+    city: La Paz
+    countryCode: BO
+    region: Bolivia
+  profiles:
+    - network: GitHub
+      username: maccXX98
+      url: "https://github.com/maccXX98"
+work:
+  - name: Fundación Educar Para La Vida
+    position: Desarrollador de Aplicaciones Educativas
+    url: "https://educarparalavida.org.bo/web/Inicio.html"
+    startDate: "2022-02-01"
+    endDate: "2022-07-01"
+    summary: >-
+      Liderazgo en el ciclo completo de desarrollo de software educativo, desde el diseño conceptual hasta el despliegue final.
+      Creación de herramientas interactivas que facilitaron la difusión digital de los Objetivos de Desarrollo Sostenible (ODS).
+    highlights:
+      - Diseño de interfaz intuitiva orientada a la experiencia de usuario (UX) para público estudiantil.
+      - Gestión estratégica de contenidos digitales en plataformas multimedia para maximizar el alcance educativo.
+  - name: Machine Learning
+    position: Desarrollador de Software
+    url: "https://www.facebook.com/MACHINELEARNINGBOLIVIA/"
+    startDate: "2023-08-01"
+    endDate: "2023-10-01"
+    summary: >-
+      Ingeniería de software aplicada a sistemas financieros críticos.
+      Desarrollo y mantenimiento de módulos para la gestión segura de remesas y control de personal bancario, asegurando la integridad de los datos.
+    highlights:
+      - Implementación de nuevas funcionalidades que optimizaron el tiempo de procesamiento de remesas.
+      - Refactorización de código legado para mejorar la mantenibilidad y escalabilidad del sistema.
+  - name: Novex
+    position: Desarrollador de Chatbot
+    url: "https://www.novex.com.bo/"
+    startDate: "2023-10-01"
+    endDate: "2023-12-01"
+    summary: >-
+      Desarrollo de soluciones de automatización de atención al cliente (RPA) integrando inteligencia artificial básica para el procesamiento de lenguaje natural.
+    highlights:
+      - Desarrollo de chatbot capaz de analizar y filtrar enlaces publicitarios en tiempo real.
+      - Integración exitosa con la API de WhatsApp para respuestas automatizadas de alta disponibilidad.
+  - name: Banco Central de Bolivia
+    position: Desarrollador Web
+    url: "https://www.bcb.gob.bo/"
+    startDate: "2024-03-01"
+    endDate: "2024-06-01"
+    summary: >-
+      Modernización de la gestión documental interna mediante el desarrollo de una plataforma web segura para el área de Auditoría Interna.
+    highlights:
+      - Implementación de motor de búsqueda optimizado para recuperación instantánea de documentos históricos.
+      - Diseño de interfaz adaptativa para facilitar la visualización de grandes volúmenes de datos.
+  - name: Notaría de Mapiri
+    position: Arquitecto de Software
+    url: "https://dirnoplu.gob.bo/"
+    startDate: "2024-12-02"
+    endDate: "2025-02-28"
+    summary: >-
+      Digitalización integral de la gestión notarial mediante el desarrollo de una solución de escritorio personalizada y segura.
+    highlights:
+      - >-
+        Diseño y desarrollo de una aplicación de escritorio multiplataforma utilizando Tauri y SQLite para máxima eficiencia local.
+      - >-
+        Automatización del ciclo contable y generación de reportes mensuales, reduciendo errores manuales en un 100%.
+      - >-
+        Creación de un sistema de gestión documental y seguimiento de trámites con validaciones de seguridad integradas.
+  - name: Escuela Avior Corporation
+    position: Desarrollador Web
+    url: "https://www.aviorcorporation.com.bo"
+    startDate: "2025-10-01"
+    endDate: "2025-11-15"
+    summary: >-
+      Transformación de la presencia digital de la institución mediante una plataforma web de alto rendimiento enfocada en la conversión.
+    highlights:
+      - >-
+        Arquitectura de sitio estático con Astro, logrando tiempos de carga ultra-rápidos y un puntaje óptimo en Google PageSpeed Insights.
+      - >-
+        Implementación de estrategias SEO y diseño Mobile-First para maximizar el alcance y la captación de prospectos.
+      - >-
+        Integración de flujos de comunicación directa mediante enlace con WhatsApp, optimizando el embudo de comunicación institucional.
+  - name: Banco BISA S.A.
+    position: Técnico Externo de Tecnología
+    url: "https://www.bisa.com/home"
+    startDate: "2025-04-01"
+    summary: >-
+      Gestión y optimización de la infraestructura tecnológica bancaria,
+      garantizando la continuidad operativa y el cumplimiento de estándares de
+      seguridad críticos. Responsable del mantenimiento preventivo y correctivo
+      de equipos tecnológicos, soporte técnico a sistemas utilizados en diversas
+      áreas del banco, instalación de hardware y software, y apoyo en la
+      implementación de nuevos sistemas y estaciones de trabajo.
+    highlights:
+      - >-
+        Resolución de incidencias críticas en sistemas institucionales, manteniendo altos niveles de Service Level Agreement (SLA).
+      - >-
+        Ejecución de planes de mantenimiento preventivo y correctivo de hardware especializado y redes de misión crítica.
+      - >-
+        Liderazgo técnico en el despliegue de nuevas estaciones de trabajo y configuración de entornos seguros para usuarios bancarios.
+      - >-
+        Garantía del cumplimiento estricto de políticas de seguridad informática en cada intervención técnica.
+education:
+  - institution: Universidad Privada Franz Tamayo
+    url: "https://unifranz.edu.bo/"
+    area: Ingeniería de Sistemas
+    studyType: Licenciatura
+    startDate: "2018-02-01"
+    endDate: "2022-12-15"
+    score: "75.75"
+    courses:
+      - Ingeniería de Sistemas
+      - Desarrollo de Software
+      - Redes y Comunicaciones
+  - institution: Instituto Tecnológico Don Bosco
+    url: "https://itdonbosco.net/"
+    area: "Computación Avanzada, Inglés Técnico y Oratoria"
+    studyType: Técnico
+    startDate: "2016-02-01"
+    endDate: "2018-11-01"
+    score: ""
+    courses:
+      - Mantenimiento de Computadoras
+      - Inglés Técnico
+      - Oratoria
+  - institution: Udemy
+    url: "https://www.udemy.com/"
+    area: "Desarrollo Web con Laravel, Angular, Node y Symfony"
+    studyType: Técnico
+    startDate: "2024-04-01"
+    endDate: "2024-07-01"
+    score: ""
+    courses:
+      - "Master en webs Full Stack: Angular, Node, Laravel, Symfony +"
+  - institution: Udemy
+    url: "https://www.udemy.com/"
+    area: Desarrollo Web con stack MERN
+    studyType: Técnico
+    startDate: "2025-06-01"
+    endDate: "2025-11-01"
+    score: ""
+    courses:
+      - "Master en React: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+"
+  - institution: Udemy
+    url: "https://www.udemy.com/"
+    area: Desarrollo Web con Astro y Tailwind CSS
+    studyType: Técnico
+    startDate: "2025-10-01"
+    endDate: "2025-11-01"
+    score: ""
+    courses:
+      - Headless WordPress - Astro WP REST API Tailwind TypeScript
+certificates:
+  - name: Master en Webs Full Stack
+    date: "2024-07-01"
+    issuer: Udemy
+    url: ""
+skills:
+  - name: HTML
+    level: Master
+    keywords:
+      - Desarrollo Web
+      - Frontend
+  - name: CSS
+    level: Master
+    keywords:
+      - Desarrollo Web
+      - Frontend
+      - Diseño Responsive
+  - name: JavaScript
+    level: Master
+    keywords:
+      - Desarrollo Web
+      - Frontend
+      - Backend
+      - Fullstack
+  - name: TypeScript
+    level: Avanzado
+    keywords:
+      - Desarrollo Web
+      - Frontend
+      - Backend
+      - JavaScript Superset
+  - name: PHP
+    level: Avanzado
+    keywords:
+      - Desarrollo Web
+      - Backend
+      - Servidor
+      - Aplicaciones Web
+  - name: "C#"
+    level: Intermedio
+    keywords:
+      - Desarrollo de Aplicaciones
+      - .NET
+      - Backend
+      - Programación Orientada a Objetos
+  - name: Bash
+    level: Intermedio
+    keywords:
+      - Terminal
+      - Scripting
+      - Linux
+      - Automatización
+  - name: React
+    level: Avanzado
+    keywords:
+      - Desarrollo Web
+      - Frontend
+      - JavaScript Library
+      - UI
+  - name: Node
+    level: Avanzado
+    keywords:
+      - Desarrollo Web
+      - Backend
+      - JavaScript
+      - Servidor
+  - name: Tailwind
+    level: Avanzado
+    keywords:
+      - Desarrollo Web
+      - Frontend
+      - CSS Framework
+      - Diseño Responsive
+  - name: Laravel
+    level: Intermedio
+    keywords:
+      - Desarrollo Web
+      - Backend
+      - PHP Framework
+      - MVC
+  - name: NestJS
+    level: Intermedio
+    keywords:
+      - Desarrollo Web
+      - Backend
+      - TypeScript
+      - Node.js Framework
+  - name: Angular
+    level: Intermedio
+    keywords:
+      - Desarrollo Web
+      - Frontend
+      - JavaScript Framework
+      - TypeScript
+  - name: AstroJS
+    level: Basico
+    keywords:
+      - Desarrollo Web
+      - Frontend
+      - Static Site Generator
+      - Performance
+  - name: Tauri
+    level: Basico
+    keywords:
+      - Desarrollo de Aplicaciones
+      - Desktop
+      - Rust
+      - Web Technologies
+  - name: Expo
+    level: Basico
+    keywords:
+      - Desarrollo Móvil
+      - React Native
+      - Aplicaciones Multiplataforma
+  - name: MySQL
+    level: Avanzado
+    keywords:
+      - Bases de Datos
+      - SQL
+      - Almacenamiento de Datos
+      - Backend
+  - name: PostgreSQL
+    level: Intermedio
+    keywords:
+      - Bases de Datos
+      - SQL
+      - Almacenamiento de Datos
+      - Backend
+  - name: SQLite
+    level: Intermedio
+    keywords:
+      - Bases de Datos
+      - SQL
+      - Almacenamiento Local
+      - Aplicaciones Móviles
+  - name: Git
+    level: Avanzado
+    keywords:
+      - Control de Versiones
+      - Colaboración
+      - Código Fuente
+  - name: GitHub
+    level: Avanzado
+    keywords:
+      - Control de Versiones
+      - Colaboración
+      - Código Fuente
+      - Git
+  - name: WordPress
+    level: Intermedio
+    keywords:
+      - Desarrollo Web
+      - CMS
+      - PHP
+      - Gestión de Contenidos
+  - name: Windows
+    level: Avanzado
+    keywords:
+      - Sistemas Operativos
+      - Entorno de Escritorio
+  - name: Ubuntu
+    level: Intermedio
+    keywords:
+      - Sistemas Operativos
+      - Linux
+      - Terminal
+  - name: Office
+    level: Avanzado
+    keywords:
+      - Productividad
+      - Ofimática
+      - Microsoft
+languages:
+  - language: Español
+    fluency: Nativo
+  - language: Inglés
+    fluency: Técnico Medio
+interests:
+  - name: Actividades Personales
+    keywords:
+      - Bailar
+      - Ejercicio
+      - Podcast
+      - Peliculas
+      - Música
+projects:
+  - name: Juego Educativo sobre los Objetivos de Desarrollo Sostenible ODS
+    isActive: true
+    startDate: "2022-02-01"
+    endDate: "2022-07-01"
+    description: >-
+      Aplicación de escritorio interactiva diseñada para la enseñanza de los ODS.
+      El proyecto combinó lógica de programación con diseño multimedia para crear una experiencia de aprendizaje inmersiva.
+    highlights:
+      - Desarrollo de arquitectura robusta para funcionamiento offline en entornos educativos con baja conectividad.
+      - Integración de recursos audiovisuales optimizados para bajo consumo de recursos.
+    url: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
+    github: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
+  - name: Sistema de Control de Remesas y Personal
+    isActive: true
+    startDate: "2023-08-01"
+    endDate: "2023-10-01"
+    description: >-
+      Módulos de alto rendimiento para el core bancario de PRODEM, enfocados en la trazabilidad de remesas y gestión eficiente del capital humano.
+    highlights:
+      - Reducción significativa en los tiempos de respuesta de consultas complejas a base de datos.
+      - Implementación de logs de auditoría para fortalecer la seguridad de las transacciones.
+    url: "https://github.com/Cristian-Beltran/PRODEM.git"
+    github: "https://github.com/Cristian-Beltran/PRODEM.git"
+  - name: Chatbot para WhatsApp con Reconocimiento de Enlaces Publicitarios
+    isActive: true
+    startDate: "2023-10-01"
+    endDate: "2023-12-01"
+    description: >-
+      Bot conversacional inteligente para WhatsApp diseñado para saneamiento de grupos y moderación automática de contenido publicitario no deseado.
+    highlights:
+      - Implementación de lógica de expresiones regulares (Regex) para detección precisa de patrones de spam.
+      - Arquitectura escalable capaz de manejar múltiples conversaciones simultáneas sin latencia.
+    url: "https://github.com/maccXX98/botWappBaileys.git"
+    github: "https://github.com/maccXX98/botWappBaileys.git"
+  - name: Página Web para Repositorio de Auditoría Interna
+    isActive: true
+    startDate: "2024-03-01"
+    endDate: "2024-06-01"
+    description: >-
+      Plataforma web intranet para la digitalización y consulta del archivo histórico de Auditoría Interna, garantizando integridad y disponibilidad.
+    highlights:
+      - Desarrollo de filtros de búsqueda avanzada multicriterio.
+      - Optimización de carga de archivos PDF grandes mediante técnicas de lazy loading y streaming.
+    url: "https://www.bcb.gob.bo/"
+  - name: Sistema de Registro para la Notaría de Mapiri
+    isActive: true
+    startDate: "2024-12-02"
+    endDate: "2025-02-28"
+    description: >-
+      Ecosistema digital completo para notaría que integra gestión financiera, documental y de clientes en una única solución robusta y segura.
+    highlights:
+      - Arquitectura moderna desacoplada: Backend en Rust (Tauri) para performance nativa y Frontend en React.
+      - Sistema de reportes automatizados que elimina la carga operativa manual de fin de mes.
+      - Interfaz de usuario intuitiva diseñada para minimizar la curva de aprendizaje del personal.
+    url: "https://github.com/maccXX98/registros-notaria.git"
+    github: "https://github.com/maccXX98/registros-notaria.git"
+  - name: Página web para escuela Avior Corporation
+    isActive: true
+    startDate: "2025-10-01"
+    endDate: "2025-11-15"
+    description: >-
+      Landing page corporativa de alto impacto visual y rendimiento técnico, diseñada para convertir visitantes en prospectos calificados.
+    highlights:
+      - Optimización técnica extrema logrando puntuaciones perfectas en Core Web Vitals.
+      - Integración fluida con WhatsApp Business API para canalizar leads directamente al equipo de ventas.
+      - Diseño responsivo "Pixel Perfect" que asegura una experiencia de marca consistente en cualquier dispositivo.
+    url: "https://www.aviorcorporation.com.bo"
+    github: "https://github.com/maccXX98/avior-landing-page"
