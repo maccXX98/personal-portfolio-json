@@ -9,8 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.6",
-    "astro": "^5.16.8",
+    "@astrojs/check": "0.9.9",
+    "astro": "6.4.6",
     "hotkeypad": "^1.0.1",
     "js-yaml": "^4.1.1",
     "typescript": "^5.7.3"
