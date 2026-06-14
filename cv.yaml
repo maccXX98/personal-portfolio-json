@@ -397,7 +397,7 @@ projects:
     description: >-
       Ecosistema digital completo para notaría que integra gestión financiera, documental y de clientes en una única solución robusta y segura.
     highlights:
-      - Arquitectura moderna desacoplada: Backend en Rust (Tauri) para performance nativa y Frontend en React.
+      - Arquitectura moderna desacoplada con Backend en Rust (Tauri) para performance nativa y Frontend en React.
       - Sistema de reportes automatizados que elimina la carga operativa manual de fin de mes.
       - Interfaz de usuario intuitiva diseñada para minimizar la curva de aprendizaje del personal.
     url: "https://github.com/maccXX98/registros-notaria.git"
