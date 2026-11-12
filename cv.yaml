@@ -348,7 +348,7 @@ interests:
       - Música
 projects:
   - name: Juego Educativo sobre los Objetivos de Desarrollo Sostenible ODS
-    isActive: true
+    isActive: false
     startDate: "2022-02-01"
     endDate: "2022-07-01"
     description: >-
@@ -357,10 +357,10 @@ projects:
     highlights:
       - Desarrollo de arquitectura robusta para funcionamiento offline en entornos educativos con baja conectividad.
       - Integración de recursos audiovisuales optimizados para bajo consumo de recursos.
-    url: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
-    github: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
+    url: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida"
+    github: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida"
   - name: Sistema de Control de Remesas y Personal
-    isActive: true
+    isActive: false
     startDate: "2023-08-01"
     endDate: "2023-10-01"
     description: >-
@@ -368,10 +368,10 @@ projects:
     highlights:
       - Reducción significativa en los tiempos de respuesta de consultas complejas a base de datos.
       - Implementación de logs de auditoría para fortalecer la seguridad de las transacciones.
-    url: "https://github.com/Cristian-Beltran/PRODEM.git"
-    github: "https://github.com/Cristian-Beltran/PRODEM.git"
+    url: "https://github.com/Cristian-Beltran/PRODEM"
+    github: "https://github.com/Cristian-Beltran/PRODEM"
   - name: Chatbot para WhatsApp con Reconocimiento de Enlaces Publicitarios
-    isActive: true
+    isActive: false
     startDate: "2023-10-01"
     endDate: "2023-12-01"
     description: >-
@@ -379,10 +379,10 @@ projects:
     highlights:
       - Implementación de lógica de expresiones regulares (Regex) para detección precisa de patrones de spam.
       - Arquitectura escalable capaz de manejar múltiples conversaciones simultáneas sin latencia.
-    url: "https://github.com/maccXX98/botWappBaileys.git"
-    github: "https://github.com/maccXX98/botWappBaileys.git"
+    url: "https://github.com/maccXX98/botWappBaileys"
+    github: "https://github.com/maccXX98/botWappBaileys"
   - name: Página Web para Repositorio de Auditoría Interna
-    isActive: true
+    isActive: false
     startDate: "2024-03-01"
     endDate: "2024-06-01"
     description: >-
@@ -392,7 +392,7 @@ projects:
       - Optimización de carga de archivos PDF grandes mediante técnicas de lazy loading y streaming.
     url: "https://www.bcb.gob.bo/"
   - name: Sistema de Registro para la Notaría de Mapiri
-    isActive: true
+    isActive: false
     startDate: "2024-12-02"
     endDate: "2025-02-28"
     description: >-
@@ -401,8 +401,8 @@ projects:
       - Arquitectura moderna desacoplada con Backend en Rust (Tauri) para performance nativa y Frontend en React.
       - Sistema de reportes automatizados que elimina la carga operativa manual de fin de mes.
       - Interfaz de usuario intuitiva diseñada para minimizar la curva de aprendizaje del personal.
-    url: "https://github.com/maccXX98/registros-notaria.git"
-    github: "https://github.com/maccXX98/registros-notaria.git"
+    url: "https://github.com/maccXX98/registros-notaria"
+    github: "https://github.com/maccXX98/registros-notaria"
   - name: Página web para escuela Avior Corporation
     isActive: true
     startDate: "2025-10-01"

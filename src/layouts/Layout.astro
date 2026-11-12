@@ -1,5 +1,7 @@
 ---
-import { basics } from "@cv";
+import "@fontsource-variable/inter";
+import { getCV, resolveLocale } from "@cv";
+import { useTranslations } from "@/i18n";
 
 interface Props {
   title: string;
@@ -7,51 +9,96 @@ interface Props {
 
 const { title } = Astro.props;
 
-const { image, summary, url } = basics;
+const locale = resolveLocale(Astro.currentLocale);
+const t = useTranslations(locale);
+const { image, summary } = getCV(locale).basics;
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const paths = { es: `${base}/`, en: `${base}/en/` };
+const otherLocale = locale === "es" ? "en" : "es";
+
+// Absolute URLs are only available when the `site` option is configured.
+const absolute = (pathname: string) => (Astro.site ? new URL(pathname, Astro.site).href : undefined);
+const canonical = absolute(paths[locale]);
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <title>{title}</title>
     <meta name="description" content={summary} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preload" as="image" href={image} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {canonical && <link rel="alternate" hreflang="es" href={absolute(paths.es)} />}
+    {canonical && <link rel="alternate" hreflang="en" href={absolute(paths.en)} />}
 
-    <meta property="og:url" content={url} />
-    <meta property="og:type" content="website" />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content={locale === "es" ? "es_BO" : "en_US"} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={summary} />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content={image} />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
-    <meta property="twitter:url" content={url} />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={summary} />
-    <meta name="twitter:image" content="" />
-    
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="twitter:image" content={image} />
   </head>
   <body>
     <div class="background-pattern"></div>
+    <a class="language-switch no-print" href={paths[otherLocale]} hreflang={otherLocale} lang={otherLocale} title={t.switchLanguage} aria-label={t.switchLanguage}>
+      {t.switchLanguageShort}
+    </a>
     <slot />
   </body>
 </html>
 
 <style is:global>
   :root {
+    color-scheme: light dark;
+    --color-heading: #111827;
     --color-text: #1f2937;
+    --color-text-soft: #4b5563;
     --color-text-muted: #6b7280;
     --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-surface-hover: #f3f4f6;
     --color-primary: #2563eb;
+    --color-accent: #3b82f6;
+    --color-success: #10b981;
     --color-border: #e5e7eb;
-    --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --color-border-strong: #d1d5db;
+    --color-chip-bg: #1f2937;
+    --color-chip-bg-hover: #374151;
+    --color-chip-text: #ffffff;
+    --color-pattern: #e5e7eb;
+    --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --font-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-heading: #f9fafb;
+      --color-text: #e5e7eb;
+      --color-text-soft: #c4c9d2;
+      --color-text-muted: #9ca3af;
+      --color-bg: #0b0f17;
+      --color-surface: #131a26;
+      --color-surface-hover: #1c2534;
+      --color-primary: #60a5fa;
+      --color-accent: #60a5fa;
+      --color-success: #34d399;
+      --color-border: #232d3d;
+      --color-border-strong: #364357;
+      --color-chip-bg: #1c2534;
+      --color-chip-bg-hover: #2a3649;
+      --color-chip-text: #e5e7eb;
+      --color-pattern: #1e2735;
+      --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    }
   }
 
   html {
@@ -88,7 +135,7 @@ const { image, summary, url } = basics;
   h1, h2, h3, h4 {
     margin: 0;
     font-family: var(--font-sans);
-    color: #111827;
+    color: var(--color-heading);
   }
 
   p {
@@ -106,11 +153,37 @@ const { image, summary, url } = basics;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-image: radial-gradient(var(--color-pattern) 1px, transparent 1px);
     background-size: 24px 24px;
     opacity: 0.6;
     pointer-events: none;
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  .language-switch {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    color: var(--color-text-muted);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+
+  .language-switch:hover {
+    color: var(--color-heading);
+    border-color: var(--color-border-strong);
+    background: var(--color-surface-hover);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 
   .print {
@@ -118,6 +191,18 @@ const { image, summary, url } = basics;
   }
 
   @media print {
+    :root {
+      color-scheme: light;
+      --color-heading: #111827;
+      --color-text: #1f2937;
+      --color-text-soft: #4b5563;
+      --color-text-muted: #6b7280;
+      --color-bg: #ffffff;
+      --color-surface: #ffffff;
+      --color-border: #e5e7eb;
+      --color-accent: #3b82f6;
+    }
+
     .no-print {
       display: none !important;
     }

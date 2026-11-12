@@ -1,15 +1,20 @@
 ---
 import Section from "../Section.astro";
 
-import { work } from "@cv";
+import { getCV } from "@cv";
+import { formatMonthYear, useTranslations } from "@/i18n";
+
+const locale = Astro.currentLocale;
+const { work } = getCV(locale);
+const t = useTranslations(locale);
 ---
 
-<Section title="Experiencia laboral">
-  <ul>
+<Section title={t.experience}>
+  <ul class="timeline">
     {
-      work.map(({ name, startDate, endDate, position, summary, url }) => {
-        const startYear = new Date(startDate).getFullYear();
-        const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual";
+      work.map(({ name, startDate, endDate, position, summary, url, highlights }) => {
+        const start = formatMonthYear(startDate, locale);
+        const end = endDate ? formatMonthYear(endDate, locale) : t.present;
 
         return (
           <li>
@@ -17,26 +22,33 @@ import { work } from "@cv";
               <header>
                 <div>
                   <h3>
-                    <a href={url} title={`Ver ${name}`} target="_blank">
-                      {name}
-                    </a>
+                    {url ? (
+                      <a href={url} title={t.viewCompany(name)} target="_blank" rel="noopener noreferrer">
+                        {name}
+                      </a>
+                    ) : (
+                      name
+                    )}
                   </h3>
                   <h4>{position}</h4>
                 </div>
 
-                <div>
-                  <time datetime={startDate} data-title={startDate}>
-                    {startYear}
-                  </time>
-                  {" - "}
-                  <time datetime={endDate} data-title={endDate}>
-                    {endYear}
-                  </time>
+                <div class="period">
+                  <time datetime={startDate}>{start}</time>
+                  {" – "}
+                  {endDate ? <time datetime={endDate}>{end}</time> : <span>{end}</span>}
                 </div>
               </header>
 
               <footer>
                 <p>{summary}</p>
+                {highlights?.length > 0 && (
+                  <ul class="highlights">
+                    {highlights.map((highlight) => (
+                      <li>{highlight}</li>
+                    ))}
+                  </ul>
+                )}
               </footer>
             </article>
           </li>
@@ -47,7 +59,7 @@ import { work } from "@cv";
 </Section>
 
 <style>
-  ul {
+  .timeline {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -55,21 +67,21 @@ import { work } from "@cv";
     padding-left: 1.5rem;
   }
   
-  ul::before {
+  .timeline::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     width: 2px;
-    background: #e5e7eb;
+    background: var(--color-border);
   }
 
-  li {
+  .timeline > li {
     position: relative;
   }
 
-  li::before {
+  .timeline > li::before {
     content: '';
     position: absolute;
     left: -1.5rem;
@@ -77,15 +89,15 @@ import { work } from "@cv";
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #3b82f6;
-    border: 2px solid #fff;
+    background: var(--color-accent);
+    border: 2px solid var(--color-bg);
     transform: translateX(-50%);
     z-index: 1;
   }
 
   article h3 {
     font-weight: 600;
-    color: #111827;
+    color: var(--color-heading);
     font-size: 1.1rem;
   }
 
@@ -95,11 +107,11 @@ import { work } from "@cv";
 
   article a:hover {
     text-decoration: underline;
-    color: #2563eb;
+    color: var(--color-primary);
   }
 
   article h4 {
-    color: #4b5563;
+    color: var(--color-text-soft);
     font-weight: 400;
     margin-top: 0.25rem;
   }
@@ -111,62 +123,46 @@ import { work } from "@cv";
     margin-bottom: 8px;
   }
 
-  time {
-    color: #6b7280;
+  .period {
+    color: var(--color-text-muted);
     font-size: 0.85rem;
-    min-width: 102px;
-    text-align: right;
-  }
-
-  [data-title]:hover:after {
-    opacity: 1;
-    transition: all 0.1s ease-in-out 0.5s;
-    visibility: visible;
-  }
-
-  [data-title]:after {
-    content: attr(data-title);
-    background-color: #1f2937;
-    color: #fff;
-    font-size: 0.75rem;
-    font-family: var(--font-sans);
-    position: absolute;
-    padding: 0.2rem 0.5rem;
-    bottom: -1.4rem;
-    left: 50%;
     white-space: nowrap;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    z-index: 10;
-    visibility: hidden;
-    border-radius: 6px;
-    transform: translateX(-50%);
+    padding-left: 1rem;
+    padding-top: 0.2rem;
   }
 
-  [data-title] {
-    position: relative;
+  .highlights {
+    list-style: disc;
+    margin-top: 8px;
+    padding-left: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--color-text-soft);
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
-  
+
+  .highlights li::marker {
+    color: var(--color-accent);
+  }
+
   p {
-    color: #4b5563;
+    color: var(--color-text-soft);
   }
 
   @media (width <= 700px) {
-    time {
-      text-align: right;
-    }
-    
-    ul {
+    .timeline {
       padding-left: 0;
     }
     
-    ul::before, li::before {
+    .timeline::before, .timeline > li::before {
       display: none;
     }
   }
 
   @media print {
-    ul::before, li::before {
+    .timeline::before, .timeline > li::before {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }

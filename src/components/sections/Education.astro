@@ -1,16 +1,20 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "@cv";
+import { getCV } from "@cv";
+import { useTranslations } from "@/i18n";
+
+const { education } = getCV(Astro.currentLocale);
+const t = useTranslations(Astro.currentLocale);
 ---
 
-<Section title="Educación">
+<Section title={t.education}>
   <ul>
     {
-      education.map(({ institution, startDate, endDate, area }) => {
+      education.map(({ institution, startDate, endDate, area, studyType }) => {
         const startYear = new Date(startDate).getFullYear();
-        const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual";
-        const years = `${startYear} - ${endYear}`;
+        const endYear = endDate != null ? new Date(endDate).getFullYear() : t.present;
+        const years = startYear === endYear ? `${startYear}` : `${startYear} – ${endYear}`;
 
         return (
           <li>
@@ -24,7 +28,7 @@ import { education } from "@cv";
               </header>
 
               <footer>
-                <p>{area}</p>
+                <p>{studyType ? `${studyType} · ${area}` : area}</p>
               </footer>
             </article>
           </li>
@@ -50,7 +54,7 @@ import { education } from "@cv";
     top: 0;
     bottom: 0;
     width: 2px;
-    background: #e5e7eb;
+    background: var(--color-border);
   }
 
   li {
@@ -65,15 +69,15 @@ import { education } from "@cv";
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #3b82f6;
-    border: 2px solid #fff;
+    background: var(--color-accent);
+    border: 2px solid var(--color-bg);
     transform: translateX(-50%);
     z-index: 1;
   }
 
   article h3 {
     font-weight: 600;
-    color: #111827;
+    color: var(--color-heading);
     font-size: 1.1rem;
   }
 
@@ -85,14 +89,14 @@ import { education } from "@cv";
   }
 
   time {
-    color: #6b7280;
+    color: var(--color-text-muted);
     font-size: 0.85rem;
     min-width: 102px;
     text-align: right;
   }
   
   p {
-    color: #4b5563;
+    color: var(--color-text-soft);
   }
 
   @media (width <= 700px) {

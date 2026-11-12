@@ -1,79 +1,59 @@
 # Portafolio Personal
 
-Un sitio web de portafolio personal moderno y responsivo, construido con configuración basada en JSON, lo que facilita su actualización y mantenimiento.
+Portafolio y CV de una sola página, bilingüe (español e inglés), construido con Astro. Todo el contenido vive en archivos YAML, así que actualizarlo no requiere tocar los componentes.
 
 ## Características
 
-- 🎨 Diseño moderno y limpio
-- 📱 Diseño totalmente responsivo
-- ⚡ Rendimiento rápido y optimizado
-- 🔧 Configuración sencilla a través de archivos JSON
-- 🎯 Secciones para proyectos, habilidades y experiencia
-- 📝 Gestión dinámica de contenido
+- Contenido definido en `cv.yaml` (español) y `cv_english.yaml` (inglés), con el esquema de [JSON Resume](https://jsonresume.org/schema/)
+- Versión en español en `/` y en inglés en `/en/`
+- Modo claro y oscuro según la preferencia del sistema
+- Paleta de comandos con `Ctrl + K`
+- Hoja de estilos de impresión para exportar el CV a PDF
+- Sitio 100 % estático, con la foto optimizada en el build
 
-## Primeros Pasos
+## Requisitos
 
-### Requisitos Previos
+- Node.js 22 o superior
+- [Bun](https://bun.sh/) (el proyecto usa `bun.lock`); npm o pnpm también funcionan
 
-- Node.js (v20 o superior)
-- npm, yarn o pnpm
-
-### Instalación
-
-1. Clona el repositorio:
+## Uso
 
 ```bash
 git clone https://github.com/maccXX98/personal-portfolio-json.git
-```
-
-2. Navega al directorio del proyecto:
-
-```bash
 cd personal-portfolio-json
+bun install
+bun run dev
 ```
 
-3. Instala las dependencias:
-
-```bash
-npm install
-# o
-yarn install
-# o
-pnpm install
-```
-
-4. Inicia el servidor de desarrollo:
-
-```bash
-npm run dev
-# o
-yarn dev
-# o
-pnpm dev
-```
+| Comando | Acción |
+| --- | --- |
+| `bun run dev` | Servidor de desarrollo |
+| `bun run build` | Genera el sitio en `dist/` |
+| `bun run preview` | Sirve el build localmente |
+| `bun run check` | Verificación de tipos |
 
 ## Configuración
 
-El contenido del portafolio se puede modificar fácilmente actualizando el archivo JSON `cv.json`:
+- **Contenido**: edita `cv.yaml` y `cv_english.yaml`. La experiencia y los proyectos se ordenan solos, del más reciente al más antiguo.
+- **Proyectos en línea**: `isActive: true` muestra el indicador verde; úsalo solo para proyectos desplegados.
+- **Textos de la interfaz**: `src/i18n.ts`.
+- **Colores**: variables CSS en `src/layouts/Layout.astro`.
+- **URL del sitio**: define `SITE_URL` al compilar para generar las etiquetas `canonical`, `hreflang` y `og:url`:
 
-- `profile.json` - Información personal y enlaces a redes sociales
-- `projects.json` - Proyectos del portafolio y sus detalles
-- `skills.json` - Habilidades técnicas y experiencia
-- `experience.json` - Experiencia laboral y educación
+```bash
+SITE_URL=https://tu-dominio.com bun run build
+```
 
-## Personalización
+## Estructura
 
-Puedes personalizar la apariencia modificando:
-
-- Estilos CSS en para cada seccion se actuaiza en `styles`
-- Diseños de componentes en el directorio `components`
-- Estructuras de páginas en el directorio `pages`
-
-## Construido Con
-
-- Astro.js - Framework de frontend
-- CSS - Estilos de la interfaz
-- JSON - Gestión de datos
+```text
+cv.yaml, cv_english.yaml   Contenido del CV
+src/cv-loader.ts           Carga y ordena el CV según el idioma
+src/i18n.ts                Textos de la interfaz y formato de fechas
+src/components/sections/   Secciones de la página
+src/layouts/Layout.astro   Documento base, metadatos y tema
+src/pages/                 Rutas (/ y /en/)
+```
 
 ## Licencia
 
@@ -81,13 +61,10 @@ Este proyecto está bajo la Licencia MIT.
 
 ## Agradecimientos
 
-- [Astro.js](https://astro.build/)
-- [Ninja Keys](https://ninja-keys.vercel.app/)
-- Diseño inspirado en: (https://github.com/midudev/minimalist-portfolio-json)
-
+- [Astro](https://astro.build/)
+- [HotKeyPad](https://github.com/jesubohr/hotkeypad)
+- Diseño inspirado en [minimalist-portfolio-json](https://github.com/midudev/minimalist-portfolio-json)
 
 ## Contacto
 
-Tu Nombre - [mauro.castillo.ing.sis@gmail.com]
-
-Enlace del Proyecto: [https://github.com/maurocastillo98/personal-portfolio-json]
+Mauro Castillo — mauro.castillo.ing.sis@gmail.com

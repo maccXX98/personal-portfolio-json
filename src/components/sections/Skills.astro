@@ -25,7 +25,11 @@ import Office from "@/icons/office.astro";
 import Bash from "@/icons/bash.astro";
 import SQLite from "@/icons/sqlite.astro";
 import PostgreSQL from "@/icons/postgresql.astro";
-import { skills } from "@cv";
+import { getCV } from "@cv";
+import { useTranslations } from "@/i18n";
+
+const { skills } = getCV(Astro.currentLocale);
+const t = useTranslations(Astro.currentLocale);
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -56,7 +60,7 @@ const SKILLS_ICONS: Record<string, any> = {
 };
 ---
 
-<Section title="Habilidades">
+<Section title={t.skills}>
   <ul>
     {
       skills.map(({ name }) => {
@@ -65,7 +69,7 @@ const SKILLS_ICONS: Record<string, any> = {
         return (
           <li>
             {Icon && <Icon />} 
-            {name !== "C#" && <span>{name}</span>}
+            <span>{name}</span>
           </li>
         );
       })
@@ -82,9 +86,9 @@ const SKILLS_ICONS: Record<string, any> = {
 
   li {
     align-items: center;
-    background: #1f2937;
+    background: var(--color-chip-bg);
     border-radius: 6px;
-    color: #fff;
+    color: var(--color-chip-text);
     display: flex;
     font-size: 0.8rem;
     font-weight: 500;
@@ -95,7 +99,7 @@ const SKILLS_ICONS: Record<string, any> = {
   }
   
   li:hover {
-    background: #374151;
+    background: var(--color-chip-bg-hover);
     transform: translateY(-2px);
   }
 

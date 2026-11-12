@@ -126,6 +126,8 @@ type Language =
 interface Projects {
   name: string
   isActive: boolean
+  startDate: DateStr
+  endDate?: DateStr | null
   description: string
   highlights: Highlight
   url: string

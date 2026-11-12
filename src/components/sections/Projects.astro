@@ -2,11 +2,15 @@
 import GitHub from "@/icons/GitHub.astro";
 import Section from "../Section.astro";
 
-import { projects } from "@cv";
+import { getCV } from "@cv";
+import { useTranslations } from "@/i18n";
+
+const { projects } = getCV(Astro.currentLocale);
+const t = useTranslations(Astro.currentLocale);
 ---
 
-<Section title="Proyectos">
-  <ul>
+<Section title={t.projects}>
+  <ul class="grid">
     {
       projects.map(({ url, description, highlights, name, isActive, github }) => {
         return (
@@ -14,16 +18,22 @@ import { projects } from "@cv";
             <article>
               <header>
                 <h3>
-                  <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
-                    {name}
-                  </a>
-                  {isActive && <span>•</span>}
-                  {github && (
+                  {url ? (
+                    <a href={url} target="_blank" rel="noopener noreferrer" title={t.viewProject(name)}>
+                      {name}
+                    </a>
+                  ) : (
+                    name
+                  )}
+                  {isActive && <span class="active" title={t.activeProject} aria-label={t.activeProject}>{" "}•</span>}
+                  {github && github !== url && (
                     <a
                       class="github-code-link"
                       href={github}
                       target="_blank"
-                      title={`Ver código fuente del proyecto ${name}`}
+                      rel="noopener noreferrer"
+                      title={t.viewSource(name)}
+                      aria-label={t.viewSource(name)}
                     >
                       <GitHub />
                     </a>
@@ -31,11 +41,11 @@ import { projects } from "@cv";
                 </h3>
                 <p>{description}</p>
               </header>
-              <footer>
-                {highlights.map((highlight) => {
-                  return <span>{highlight}</span>;
-                })}
-              </footer>
+              <ul class="highlights">
+                {highlights.map((highlight) => (
+                  <li>{highlight}</li>
+                ))}
+              </ul>
             </article>
           </li>
         );
@@ -45,29 +55,29 @@ import { projects } from "@cv";
 </Section>
 
 <style>
-  ul {
+  .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     margin-inline: -16px;
   }
 
   article {
     border-radius: 8px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-border);
     gap: 16px;
     display: flex;
     flex-direction: column;
     padding: 16px;
     height: 100%;
-    background: #fff;
+    background: var(--color-surface);
     transition: all 0.3s ease;
   }
   
   article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    border-color: #d1d5db;
+    box-shadow: var(--shadow-card);
+    border-color: var(--color-border-strong);
   }
 
   article header {
@@ -77,7 +87,7 @@ import { projects } from "@cv";
   article h3 {
     margin-bottom: 4px;
     font-weight: 600;
-    color: #111827;
+    color: var(--color-heading);
   }
 
   article a {
@@ -86,39 +96,37 @@ import { projects } from "@cv";
 
   article a:hover {
     text-decoration: underline;
-    color: #2563eb;
+    color: var(--color-primary);
   }
 
   article p {
     font-size: 0.85rem;
     line-height: 1.5;
     margin-bottom: 4px;
-    color: #4b5563;
+    color: var(--color-text-soft);
   }
 
-  article h3 span {
-    color: #10b981;
+  article h3 .active {
+    color: var(--color-success);
     animation-name: flicker;
     animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
   }
 
-  footer {
+  .highlights {
+    list-style: disc;
+    padding-left: 1.1rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 4px;
-    font-size: 0.6rem;
+    color: var(--color-text-soft);
+    font-size: 0.8rem;
+    line-height: 1.45;
   }
 
-  footer span {
-    border-radius: 6px;
-    background: #f3f4f6;
-    color: #374151;
-    font-size: 0.7rem;
-    font-weight: 500;
-    padding: 0.2rem 0.6rem;
-    border: 1px solid #e5e7eb;
+  .highlights li::marker {
+    color: var(--color-accent);
   }
 
   .github-code-link {
@@ -132,19 +140,20 @@ import { projects } from "@cv";
   }
 
   @media (width <= 700px) {
-    ul {
+    .grid {
       margin-inline: 0px;
     }
 
     article {
       border: none;
-      box-shadow: 0 1px 1px #f2f2f2;
+      box-shadow: none;
+      background: transparent;
       padding: 0 0 16px 0;
     }
   }
 
   @media print {
-    article h3 span {
+    article h3 .active {
       animation-name: none;
     }
   }

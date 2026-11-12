@@ -2,9 +2,11 @@
 import "hotkeypad/reset.css";
 import "hotkeypad/index.css";
 import { type SocialIcon } from "@/types";
-import { basics } from "@cv";
+import { getCV } from "@cv";
+import { useTranslations } from "@/i18n";
 
-const { profiles } = basics;
+const { profiles } = getCV(Astro.currentLocale).basics;
+const t = useTranslations(Astro.currentLocale);
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub: `<svg
@@ -50,7 +52,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
   return {
     id: network,
     section: "Social",
-    title: `Visitar ${network}`,
+    title: t.visit(network),
     url,
     icon,
     hotkey: `ctrl+${firstLetter}`,
@@ -59,10 +61,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
 ---
 
 <footer id="normal-footer" class="no-print">
-  Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
+  {t.paletteHintBefore} <kbd>Ctrl</kbd> + <kbd>K</kbd> {t.paletteHintAfter}
 </footer>
 
-<div id="footer-button" class="no-print">
+<div id="footer-button" class="no-print" role="button" tabindex="0" aria-label={t.searchCommand}>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     class="icon icon-tabler icon-tabler-command"
@@ -70,7 +72,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
     height="32"
     viewBox="0 0 24 24"
     stroke-width="1.5"
-    stroke="#777"
+    stroke="currentColor"
     fill="none"
     stroke-linecap="round"
     stroke-linejoin="round"
@@ -80,7 +82,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
   </svg>
 </div>
 
-<div id="hotkeypad" data-placeholder="Buscar comando" data-info={JSON.stringify(profilesInfo)}></div>
+<div id="hotkeypad" data-placeholder={t.searchCommand}
+  data-print-title={t.print}
+  data-actions-section={t.actions}
+  data-info={JSON.stringify(profilesInfo)}></div>
 
 <script>
   interface Info {
@@ -107,19 +112,19 @@ const profilesInfo = profiles.map(({ network, url }) => {
       hotkey,
       section,
       handler: () => {
-        window.open(url, "_blank");
+        window.open(url, "_blank", "noopener,noreferrer");
       },
     };
   });
   hotkeypad.setCommands([
     {
       id: "print",
-      title: "Imprimir",
+      title: hotkeypad.instance.getAttribute("data-print-title") ?? "Print",
       icon: `<svg style="margin-right: 8px" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
 </svg>`,
       hotkey: "ctrl+P",
-      section: "Acciones",
+      section: hotkeypad.instance.getAttribute("data-actions-section") ?? "Actions",
       handler: () => {
         window.print();
       },
@@ -170,9 +175,9 @@ const profilesInfo = profiles.map(({ network, url }) => {
     }
 
     #footer-button {
-      background: #fff;
+      background: var(--color-surface);
       position: fixed;
-      border: 1px solid #e5e7eb;
+      border: 1px solid var(--color-border);
       right: 10px;
       bottom: 10px;
       width: 50px;
@@ -187,15 +192,15 @@ const profilesInfo = profiles.map(({ network, url }) => {
   }
 
   footer {
-    background: #fff;
-    border-top: 1px solid #e5e7eb;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
     position: fixed;
     bottom: 0px;
     width: 100%;
     padding-block: 8px;
     text-align: center;
     font-size: 0.85rem;
-    color: #6b7280;
+    color: var(--color-text-muted);
 
     view-timeline-name: --revealing;
     view-timeline-axis: block;
@@ -206,10 +211,10 @@ const profilesInfo = profiles.map(({ network, url }) => {
   }
 
   kbd {
-    background: #f3f4f6;
+    background: var(--color-surface-hover);
     border-radius: 4px;
     padding: 2px 4px;
     font-size: 12px;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--color-border-strong);
   }
 </style>

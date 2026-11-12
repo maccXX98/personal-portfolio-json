@@ -355,7 +355,7 @@ interests:
 references: []
 projects:
   - name: Educational Game on the Sustainable Development Goals (SDGs)
-    isActive: true
+    isActive: false
     startDate: "2022-02-01"
     endDate: "2022-07-01"
     description: >-
@@ -365,10 +365,10 @@ projects:
     highlights:
       - Implemented a user-friendly and educational interface.
       - Created multimedia content to complement learning.
-    url: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
-    github: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida.git"
+    url: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida"
+    github: "https://github.com/maccXX98/Juego-Educativo-FundacionEducarParaLaVida"
   - name: Remittance and Personnel Control System
-    isActive: true
+    isActive: false
     startDate: "2023-08-01"
     endDate: "2023-10-01"
     description: >-
@@ -377,10 +377,10 @@ projects:
     highlights:
       - Automated internal processes.
       - Optimized the system workflow.
-    url: "https://github.com/Cristian-Beltran/PRODEM.git"
-    github: "https://github.com/Cristian-Beltran/PRODEM.git"
+    url: "https://github.com/Cristian-Beltran/PRODEM"
+    github: "https://github.com/Cristian-Beltran/PRODEM"
   - name: WhatsApp Chatbot with Advertising Link Recognition
-    isActive: true
+    isActive: false
     startDate: "2023-10-01"
     endDate: "2023-12-01"
     description: >-
@@ -389,10 +389,10 @@ projects:
     highlights:
       - Integrated with the WhatsApp API.
       - Recognized and analyzed patterns in advertising links.
-    url: "https://github.com/maccXX98/botWappBaileys.git"
-    github: "https://github.com/maccXX98/botWappBaileys.git"
+    url: "https://github.com/maccXX98/botWappBaileys"
+    github: "https://github.com/maccXX98/botWappBaileys"
   - name: Website for Internal Audit Repository
-    isActive: true
+    isActive: false
     startDate: "2024-03-01"
     endDate: "2024-06-01"
     description: >-
@@ -403,7 +403,7 @@ projects:
       - Optimized access to confidential documents.
     url: "https://www.bcb.gob.bo/"
   - name: Registry System for Notaría de Mapiri
-    isActive: true
+    isActive: false
     startDate: "2024-12-02"
     endDate: "2025-02-28"
     description: >-
@@ -414,8 +414,8 @@ projects:
       - Implemented backend with Tauri and SQLite database.
       - Built a full dashboard and modular screens with React and Tailwind CSS.
       - Validated and optimized accounting and administrative processes.
-    url: "https://github.com/maccXX98/registros-notaria.git"
-    github: "https://github.com/maccXX98/registros-notaria.git"
+    url: "https://github.com/maccXX98/registros-notaria"
+    github: "https://github.com/maccXX98/registros-notaria"
   - name: Website for Avior Corporation School
     isActive: true
     startDate: "2025-10-01"

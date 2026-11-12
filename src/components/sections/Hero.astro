@@ -1,5 +1,6 @@
 ---
-import { basics } from "@cv";
+import { getCV } from "@cv";
+import { useTranslations } from "@/i18n";
 import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
@@ -7,6 +8,9 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
+
+const { basics } = getCV(Astro.currentLocale);
+const t = useTranslations(Astro.currentLocale);
 
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
@@ -28,7 +32,7 @@ import { Picture } from "astro:assets";
   <div class="container">
     <div class="info">
       <h1>{name}</h1>
-      <h2>{label}</h2>
+      <p class="label">{label}</p>
       <span>
         <WorldMap />
         {city}, {region}
@@ -41,9 +45,8 @@ import { Picture } from "astro:assets";
           email && (
             <a
               href={`mailto:${email}`}
-              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              title={t.sendEmail(name, email)}
+              aria-label={t.sendEmail(name, email)}
             >
               <Mail />
             </a>
@@ -53,26 +56,26 @@ import { Picture } from "astro:assets";
           phone && (
             <a
               href={`tel:${phone}`}
-              title={`Llamar por teléfono a ${name} al número ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              title={t.call(name, phone)}
+              aria-label={t.call(name, phone)}
             >
               <Phone />
             </a>
           )
         }
         {
-          profiles.map(({ network, url, username }) => {
+          profiles.map(({ network, url }) => {
             const Icon = SOCIAL_ICONS[network];
 
             return (
               <a
                 href={url}
-                title={`Visitar el perfil de ${name} en ${network}`}
+                title={t.visitProfile(name, network)}
+                aria-label={t.visitProfile(name, network)}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icon />
+                {Icon && <Icon />}
               </a>
             );
           })
@@ -80,7 +83,7 @@ import { Picture } from "astro:assets";
       </footer>
     </div>
     <figure>
-      <Picture src={image} alt={name} loading="eager" formats={["avif", "webp", "jpg"]} width="165" height="170" />
+      <Picture src={image} alt={name} loading="eager" formats={["avif", "webp", "jpg"]} width={165} height={165} densities={[1, 2]} />
     </figure>
   </div>
 </Section>
@@ -108,8 +111,8 @@ import { Picture } from "astro:assets";
     line-height: 1.1;
   }
 
-  h2 {
-    color: #4b5563;
+  .label {
+    color: var(--color-text-soft);
     font-weight: 500;
     font-size: 1.1rem;
     text-wrap: balance;
@@ -119,7 +122,7 @@ import { Picture } from "astro:assets";
     aspect-ratio: 1 / 1;
     object-fit: cover;
     width: 165px;
-    height: 170px;
+    height: 165px;
     border-radius: 16px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transform: rotate(3deg);
@@ -131,7 +134,7 @@ import { Picture } from "astro:assets";
   }
 
   span {
-    color: #6b7280;
+    color: var(--color-text-muted);
     display: flex;
     align-items: center;
     gap: 0.25rem;
@@ -140,7 +143,7 @@ import { Picture } from "astro:assets";
   }
 
   footer {
-    color: #555;
+    color: var(--color-text-muted);
     font-size: 0.65rem;
     display: flex;
     gap: 4px;
@@ -148,11 +151,11 @@ import { Picture } from "astro:assets";
   }
 
   footer a {
-    color: #777;
+    color: var(--color-text-muted);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #eee;
+    border: 1px solid var(--color-border);
     padding: 4px;
     height: 32px;
     width: 32px;
@@ -161,9 +164,9 @@ import { Picture } from "astro:assets";
   }
 
   footer a:hover {
-    background: #f3f4f6;
-    border-color: #d1d5db;
-    color: #111827;
+    background: var(--color-surface-hover);
+    border-color: var(--color-border-strong);
+    color: var(--color-heading);
     transform: translateY(-2px);
   }
 
@@ -185,10 +188,6 @@ import { Picture } from "astro:assets";
       align-items: center;
     }
 
-    h2 {
-      text-wrap: balance;
-    }
-
     figure {
       margin: 0 auto;
     }
@@ -197,7 +196,7 @@ import { Picture } from "astro:assets";
   @media print {
     img {
       width: 165px;
-      height: 170px;
+      height: 165px;
       transform: none;
       box-shadow: none;
     }
