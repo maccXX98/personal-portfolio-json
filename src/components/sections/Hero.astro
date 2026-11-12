@@ -15,6 +15,9 @@ const t = useTranslations(Astro.currentLocale);
 const { name, label, image, location, profiles, phone, email } = basics;
 const { city, region } = location;
 
+// "A | B | C" becomes separate chunks so a wrapped line never starts with a separator.
+const roles = label.split("|").map((role) => role.trim()).filter(Boolean);
+
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
   LinkedIn,
@@ -32,8 +35,12 @@ import { Picture } from "astro:assets";
   <div class="container">
     <div class="info">
       <h1>{name}</h1>
-      <p class="label">{label}</p>
-      <span>
+      <p class="label">
+        {roles.map((role, index) => (
+          <span>{role}{index < roles.length - 1 && <span class="separator" aria-hidden="true">·</span>}</span>
+        ))}
+      </p>
+      <span class="location">
         <WorldMap />
         {city}, {region}
       </span>
@@ -111,6 +118,16 @@ import { Picture } from "astro:assets";
     line-height: 1.1;
   }
 
+  .label > span {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .label .separator {
+    margin-inline: 0.45em;
+    color: var(--color-text-muted);
+  }
+
   .label {
     color: var(--color-text-soft);
     font-weight: 500;
@@ -133,7 +150,7 @@ import { Picture } from "astro:assets";
     transform: rotate(0deg) scale(1.05);
   }
 
-  span {
+  .location {
     color: var(--color-text-muted);
     display: flex;
     align-items: center;

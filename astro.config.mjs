@@ -3,8 +3,8 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // Set SITE_URL at build time to emit canonical, hreflang and absolute Open Graph URLs.
-  site: process.env.SITE_URL || undefined,
+  // Used for canonical, hreflang and absolute Open Graph URLs. Override with SITE_URL.
+  site: process.env.SITE_URL || 'https://portfoliomcastillo.netlify.app',
   i18n: {
     defaultLocale: 'es',
     locales: ['es', 'en'],

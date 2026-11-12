@@ -65,7 +65,7 @@ const t = useTranslations(Astro.currentLocale);
   article {
     border-radius: 8px;
     border: 1px solid var(--color-border);
-    gap: 16px;
+    gap: 12px;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -78,10 +78,6 @@ const t = useTranslations(Astro.currentLocale);
     transform: translateY(-5px);
     box-shadow: var(--shadow-card);
     border-color: var(--color-border-strong);
-  }
-
-  article header {
-    flex: 1;
   }
 
   article h3 {
@@ -131,6 +127,9 @@ const t = useTranslations(Astro.currentLocale);
 
   .github-code-link {
     margin-left: 5px;
+    display: inline-flex;
+    vertical-align: middle;
+    white-space: nowrap;
   }
 
   @keyframes flicker {
